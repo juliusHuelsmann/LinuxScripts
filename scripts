@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# Included into the .zshrc / .bashrc file for human readably diff directories" 
+function diffdir() {
+    p1=$1
+    p2=$2
+    echo "Display differences in two directories recursively:\n"
+    intermedRes=$(diff -r $p1 $p2 | grep $p1 | awk '{print $3, $4}')
+    notExist=$(echo $intermedRes | grep ":" | sed -r 's/[: ]+/ \t|\t/g')
+    differ=$(echo $intermedRes | grep -v ":")
+    
+    anotEx=$(echo $notExist | wc -l)
+    adiffer=$(echo $differ | wc -l)
+    resultMSG="Result:\tDiffer\t\t$adiffer\n\tnotExist\t$anotEx" 
+    echo "$resultMSG\n"
+    
+    
+    
+    echo "1) The following files do only exist in one of the two"
+    echo "directories:"
+    echo "DIRECTORY\t|\tFILE"
+    echo "----------------+--------------------------"
+    echo $notExist
+        
+    echo "\n2) The following files differ:"
+    echo $differ
+}
