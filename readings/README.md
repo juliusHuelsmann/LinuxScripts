@@ -15,6 +15,7 @@ This folder contains notes on articles or papers that I read recently.
 	- MachineLearning
 
 # List of papers
-- [ ] TODO 
+Attached a list of the papers and articles in chronological order, linked to the appropriate topic.
+- [ ] TODO, Topic 1
 - [x] TODO2
 
