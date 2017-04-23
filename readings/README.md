@@ -16,6 +16,5 @@ This folder contains notes on articles or papers that I read recently.
 
 # List of papers
 Attached a list of the papers and articles in chronological order, linked to the appropriate topic.
-- [ ] TODO, Topic 1
-- [x] TODO2
+- [ ] [6](algorithms): [Paxos](http://harry.me/blog/2014/12/27/neat-algorithms-paxos/)
 
