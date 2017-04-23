@@ -17,4 +17,7 @@ This folder contains notes on articles or papers that I read recently.
 # List of papers
 Attached a list of the papers and articles in chronological order, linked to the appropriate topic.
 - [ ] [6](algorithms): [Paxos](http://harry.me/blog/2014/12/27/neat-algorithms-paxos/)
+- [x] [6](algorithms): [Leap-second smearing](https://googleblog.blogspot.de/2011/09/time-technology-and-leaping-seconds.html)
+
+
 
