@@ -1,4 +1,4 @@
-# Readings
+# [.. > ](..) Readings
 This folder contains notes on articles or papers that I read recently.
 
 ## List of topics 
