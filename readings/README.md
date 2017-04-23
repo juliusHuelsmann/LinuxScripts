@@ -1,8 +1,8 @@
 # Readings
 This folder contains notes on articles or papers that I read recently.
 
-# List of topics where the papers can be found
-1. Operating Systems
+# List of topics 
+1. (Operating System)[operatingsystems]
 2. Databases
 3. Tools
 	- VIM
