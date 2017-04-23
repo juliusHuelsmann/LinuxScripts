@@ -2,17 +2,17 @@
 This folder contains notes on articles or papers that I read recently.
 
 # List of topics 
-1. (Operating System)[operatingsystems]
-2. Databases
-3. Tools
-	- VIM
-	- mutt
-	- qutebrowswer
-4. Machine Learing
-5. Hardware
-6. Algorithms and Concepts
-	- Blockchain
-	- MachineLearning
+1. [Operating System](operatingSystem)
+2. [Databases](databases)
+3. [Tools](tools)
+	- [VIM](tools/vim)
+	- [mutt](tools/mutt)
+	- [qutebrowswer](tools/qutebrowser)
+4. [Machine Learing](machineLearning)
+5. [Hardware](hardware)
+6. [Algorithms and Concept](algorithms)
+	- [Blockchain](algorithms/blockchain)
+	- [MachineLearning](algorithms/machineLearning)
 
 # List of papers
 Attached a list of the papers and articles in chronological order, linked to the appropriate topic.
