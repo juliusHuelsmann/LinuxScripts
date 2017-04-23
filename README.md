@@ -6,4 +6,5 @@ This repository contains
     3. qutebrowser
     4. mutt
     5. bashrc (zshrc)
+    6. i3
   - notes on [papers](readings) and articles I recently read.
