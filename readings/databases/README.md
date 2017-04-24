@@ -1,5 +1,5 @@
 ## [True Time](http://static.googleusercontent.com/media/research.google.com/en//archive/spanner-osdi2012.pdf)
-True time is part of google's new distributed database [spanner](#spanner).
+True time is part of google's new distributed database [spanner](#spanner) and copes with Time Synchronization on different nodes.
 
 ### [Time Synchronization](http://www.endruntechnologies.com/time-synchronization.htm)
 - [NTP](http://www.ntp.org/) is a protocol used for synchronizing the time in a network. Depends on a time reference such as
