@@ -3,7 +3,7 @@
 # machine to the other
 
 xcp () {
-	if [[ $1 -nt $2 ]]
+	if [ $1 -nt $2 ]
 		then 
 			cp $1 $2
 			echo "Copied successfully $1 to $2."

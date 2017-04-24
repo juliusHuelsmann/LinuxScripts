@@ -14,7 +14,7 @@ source archconfig.sh
 
 #
 # Execute the actual copy command.
-cp2conf $conQute $locQuote 
+cp2conf $conQute $locQute 
 
 
 
