@@ -9,12 +9,28 @@ xcp () {
 			echo "Copied successfully $1 to $2."
 		else
 			echo "Not copied: The file that is to be overwritten is newer than the configuration file inside the repository."
+			echo "tried to overwrite:  $1"
+			echo "new file:            $2"
 	fi
 	
 }
 
 
 cp2conf() {
-	mkdir $2
-	xcp $1 $2
+
+	# the destination and config file
+	destin=$2
+	conf=$1
+
+	mkdir $destin
+
+	# that is so damn ugly and does not generalize
+#	# XXX 	
+	len=${#conf}
+	ind=${conf%/*}
+	ind=${#ind}
+	ind=$((ind+2))
+	apnd=$(echo $conf | cut -c $ind-$len)
+	echo $apnd
+	xcp $1 "$2$apnd"
 }
