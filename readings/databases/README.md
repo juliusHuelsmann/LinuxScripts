@@ -1,7 +1,7 @@
-The True Time component of the google spanner database is an interesting approach to time synchronization offering a sharp uncertainty interval. From my point of view techniques of it cannot be applied directly to the problem we want to solve in the TimeCoherency project.
+The True Time component of the google spanner database is an interesting approach to time synchronization offering a sharp uncertainty interval. From my point of view techniques of it cannot be applied directly to the problem we want to solve in the Time Coherency project.
 
 The true Time API used in Spanner offers a certainty interval for time synchronization on different nodes that is solved by using time synchronization hardware.
-In our project, we do also rely on time synchronization, but we actually aim to reduce the power consumption of our Node network. For doing so, it is sufficient to maintain an estimate on the time uncertainty of directly connected nodes.o
+In our project, we do also rely on time synchronization, but we actually aim to reduce the power consumption of our Node network. For doing so, it is sufficient to maintain an estimate on the time uncertainty of directly connected nodes.
 
 
 ## [True Time](http://static.googleusercontent.com/media/research.google.com/en//archive/spanner-osdi2012.pdf)
@@ -20,7 +20,7 @@ True time is part of google's new distributed database [spanner](#spanner) and c
 
 ### Guarantees given by True Time
 The True Time API offers the client the possibility to receive an approximation of the Node's uncertainty.
-This is achieved by returning an uncertainty interval that guarantees to contain the absoute time during which the request was invoked;
+This is achieved by returning an uncertainty interval that guarantees to contain the absolute time during which the request was invoked;
 ```bash
 # Client evokes tt.now at absolute (real) time t_0
 TT.now()
@@ -29,25 +29,25 @@ TT.now()
 # where t_0 is guaranteed to be \in [t_b, t_a].
 ```
 ### The way the uncertainty interval is computed
-For that, two kinds time reference sources are used at so-called ```TimeMasters``` distributed in the network.
+For that, two kinds time reference sources are used at so-called ```Time Masters``` distributed in the network.
 - Atomic Clocks (cheap)
 - GPS (very accurate but expensive)
-Each TimeMaster has only got one of the above mentioned time references.
-However most of the TimeMaster machines are using atomic clocks.
-The use of two different physical time references is done because the errors of the different clocks tend not to be corrolated.
+Each Time Master has only got one of the above mentioned time references.
+However most of the Time Master machines are using atomic clocks.
+The use of two different physical time references is done because the errors of the different clocks tend not to be correlated.
 
-All TimeMaster's time references are regularly compared against each other. The behaviour of the machines using atomic clocks differ from those using gps clocks
+All Time Master's time references are regularly compared against each other. The behaviour of the machines using atomic clocks differ from those using GPS clocks
 
 ###### Atomic clock
 - slowly increase time uncertainty between synchronization
-  - derived from conservatively applying worst-case clock difrt estimations
+  - derived from conservatively applying worst-case clock drift estimations
   - In case the uncertainty exceeds a certain threshold, the machines are shut down.
   
 ###### GPS masters
 - The uncertainty of GPS masters is closed to zero
 
 
-Each Node (TimeslaveDaemon) polls differnet masters to reudce vulnearbility to errors from any of the masters. Marzullo's algorithm is used for detecting wrong time, afterwards, the local machine time is synchronized to an estimate based on the response from the time masters.
+Each Node (TimeslaveDaemon) polls different masters to reduce vulnerability to errors from any of the masters. Marzullo's algorithm is used for detecting wrong time, afterwards, the local machine time is synchronized to an estimate based on the response from the time masters.
 
 ### Typical diameter of the consistence interval
 - variation from about 2 to 14 ms (+-1 to 7)
