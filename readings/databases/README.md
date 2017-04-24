@@ -1,3 +1,9 @@
+The True Time component of the google spanner database is an interesting approach to time synchronization with ois not solving the problem we want to solve in the TimeCoherency project.
+
+The true Time API used in Spanner offers a certainty interval for time synchronization on different nodes that is solved by using time synchronization hardware.
+In our project, we do also rely on time synchronization, but we actually aim to reduce the power consumption of our Node network. For doing so, it is sufficient to maintain an estimate of the time uncertainty of directly connected nodes and to adapt the 
+
+
 ## [True Time](http://static.googleusercontent.com/media/research.google.com/en//archive/spanner-osdi2012.pdf)
 True time is part of google's new distributed database [spanner](#spanner) and copes with Time Synchronization on different nodes.
 
