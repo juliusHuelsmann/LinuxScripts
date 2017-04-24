@@ -8,6 +8,7 @@ This folder contains notes on articles or papers that I read recently.
 	- [VIM](tools/vim)
 	- [mutt](tools/mutt)
 	- [qutebrowswer](tools/qutebrowser)
+	- [networksimulator ns-3](tools/ns3)
 4. [Machine Learing](machineLearning)
 5. [Hardware](hardware)
 6. [Algorithms and Concept](algorithms)
