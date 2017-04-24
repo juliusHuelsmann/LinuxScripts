@@ -1,10 +1,15 @@
+
+
+
+## [True Time](http://static.googleusercontent.com/media/research.google.com/en//archive/spanner-osdi2012.pdf)
+
+### Notes on Ture Time linked to DIMA's TimeCoherency Project
 The True Time component of the google spanner database is an interesting approach to time synchronization offering a sharp uncertainty interval. From my point of view techniques of it cannot be applied directly to the problem we want to solve in the Time Coherency project.
 
 The true Time API used in Spanner offers a certainty interval for time synchronization on different nodes that is solved by using time synchronization hardware.
 In our project, we do also rely on time synchronization, but we actually aim to reduce the power consumption of our Node network. For doing so, it is sufficient to maintain an estimate on the time uncertainty of directly connected nodes.
 
 
-## [True Time](http://static.googleusercontent.com/media/research.google.com/en//archive/spanner-osdi2012.pdf)
 True time is part of google's new distributed database [spanner](#spanner) and copes with Time Synchronization on different nodes.
 
 ### [Time Synchronization](http://www.endruntechnologies.com/time-synchronization.htm)
