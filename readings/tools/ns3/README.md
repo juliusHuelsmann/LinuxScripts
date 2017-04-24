@@ -12,14 +12,14 @@ Arch:
 There is no entire list of all recommended packages, I will list the packages I needed to add at my already set-up arch operating system below: 
 ```bash
 pacman -S base-devel mercurial python-setuptools qt4 qt5-tools boost boost-libs dia
-pacman -S doxygen flex goocanvas graphviz gsl gtk2 imagemagick libxml2 openmpi pygtk python2-pydot python2-setuptools qt4 sqlite fakeroot findutils bzr gdb python2-sphinx texlive-bin tcpdump uncrustify valgrind wireshark-gtk
+pacman -S doxygen flex goocanvas graphviz gsl gtk2 imagemagick libxml2 openmpi pygtk python2-pydot python2-setuptools qt4 sqlite fakeroot findutils bzr gdb python2-sphinx texlive-bin tcpdump uncrustify valgrind wireshark-gtk gtk-doc
 
 # packages that are not in the official pacman list:
-# pygccxml-svn, 	x
-# pygoocanvas,
-# python2-pygraphviz
-# gccxml-git		x
-# 
+# pygccxml-svn, 	
+# pygoocanvas,		https://aur.archlinux.org/pygoocanvas
+# python2-pygraphviz	https://aur.archlinux.org/python2-pygraphviz.git 
+# gccxml-git		
+# goocanvasl		
 # Those packages can be installed using the ArchLinux User community repository (AUR), a collection of instructions to build user-devied packages.
 
 
@@ -42,5 +42,10 @@ cd /var/abs/local
 
 
 
+git clone https://aur.archlinux.org/goocanvasl
+git clone https://aur.archlinux.org/gccxml-git
+git clone https://aur.archlinux.org/python2-pygraphviz
+git clone https://aur.archlinux.org/pygocanvas
+git clone https://aur.archlinux.org/pygccxml-svn
 ```
 
