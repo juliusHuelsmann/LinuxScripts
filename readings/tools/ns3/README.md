@@ -13,6 +13,34 @@ There is no entire list of all recommended packages, I will list the packages I 
 ```bash
 pacman -S base-devel mercurial python-setuptools qt4 qt5-tools boost boost-libs dia
 pacman -S doxygen flex goocanvas graphviz gsl gtk2 imagemagick libxml2 openmpi pygtk python2-pydot python2-setuptools qt4 sqlite fakeroot findutils bzr gdb python2-sphinx texlive-bin tcpdump uncrustify valgrind wireshark-gtk
+
+# packages that are not in the official pacman list:
+# pygccxml-svn, 	x
+# pygoocanvas,
+# python2-pygraphviz
+# gccxml-git		x
+# 
+# Those packages can be installed using the ArchLinux User community repository (AUR), a collection of instructions to build user-devied packages.
+
+
+# Step 0:	Prerequieries that need to be set up once.
+pachman -S base-devel # this package is necessary for installing packages from AUR
+
+# Step 0a)	(recommended)
+# 		Packages are downoaded via SVN and updated via abs
+#		requires the packages to be located either in the 
+#		home directory or at /var/abs/local.
+groupadd abs		# add group for abs
+gpasswd -a [UNAME] abs	# add the current user to abs 
+mkdir -p /var/abs/local	# add the directory which will contain the installation
+chown root:abs /var/abs/local
+chmod 775 /var/abs/local
+cd /var/abs/local
+
+
+# Step 1:	clone repository, checkout the commit belonging to the required version
+
+
+
 ```
-# packages that are not in the official pacman list
-# pygccxml-svn, pygoocanvas python2-pygraphviz
+
