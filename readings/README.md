@@ -8,6 +8,7 @@ This folder contains notes on articles or papers that I read recently.
 	- [VIM](tools/vim)
 	- [mutt](tools/mutt)
 	- [qutebrowswer](tools/qutebrowser)
+	- [networksimulator ns-3](tools/ns3)
 4. [Machine Learing](machineLearning)
 5. [Hardware](hardware)
 6. [Algorithms and Concept](algorithms)
@@ -18,6 +19,6 @@ This folder contains notes on articles or papers that I read recently.
 Attached a list of the papers and articles in chronological order, linked to the appropriate topic.
 - [ ] [6](algorithms): [Paxos](http://harry.me/blog/2014/12/27/neat-algorithms-paxos/)
 - [x] [6](algorithms): [Leap-second smearing](https://googleblog.blogspot.de/2011/09/time-technology-and-leaping-seconds.html)
-
-
+- [ ] [6](algorithms): [Caffee framework](http://caffe.berkeleyvision.org/)
+- [ ] [6](algorithms): [Open AI Gym](https://gym.openai.com/)
 
