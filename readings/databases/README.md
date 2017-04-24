@@ -13,7 +13,7 @@ True time is part of google's new distributed database [spanner](#spanner) and c
 
 
 ### Guarantees given by True Time
-The True Time API offers the client the possibility to receive an approximation of the Node's uncertainty. (Node = Datacenter)
+The True Time API offers the client the possibility to receive an approximation of the Node's uncertainty.
 This is achieved by returning an uncertainty interval that guarantees to contain the absoute time during which the request was invoked;
 ```bash
 # Client evokes tt.now at absolute (real) time t_0
@@ -22,14 +22,15 @@ TT.now()
 # [t_b, t_a]
 # where t_0 is guaranteed to be \in [t_b, t_a].
 ```
-
-For that, two time reference sources directly attatched to the different Nodes are used.
+### The way the uncertainty interval is computed
+For that, two kinds time reference sources are used at so-called ```TimeMasters``` distributed in the network.
 - Atomic Clocks (cheap)
 - GPS (very accurate but expensive)
-The errors of the different clocks tend not to be corrolated. Each Datacenter has got one ```TimeMaster``` machine that contains either an atomic clock or a gps clock.
+Each TimeMaster has only got one of the above mentioned time references.
 However most of the TimeMaster machines are using atomic clocks.
+The use of two different physical time references is done because the errors of the different clocks tend not to be corrolated.
 
-All master's time references are regularly compared against each other. The behaviour of the machines using atomic clocks differ from those using gps clocks
+All TimeMaster's time references are regularly compared against each other. The behaviour of the machines using atomic clocks differ from those using gps clocks
 
 ###### Atomic clock
 - slowly increase time uncertainty between synchronization
@@ -40,10 +41,13 @@ All master's time references are regularly compared against each other. The beha
 - The uncertainty of GPS masters is closed to zero
 
 
-Each daemon polls differnet masters to reudce vulnearbility to errors from any of the masters. Marzullo's algorithm is used for detecting wrong time, afterwards, the local machine ime issynchronized to an estimate based on the response from the time masters.
+Each Node (TimeslaveDaemon) polls differnet masters to reudce vulnearbility to errors from any of the masters. Marzullo's algorithm is used for detecting wrong time, afterwards, the local machine time is synchronized to an estimate based on the response from the time masters.
 
+### Typical diameter of the consistence interval
+- variation from about 2 to 14 ms (+-1 to 7)
+- avg 8 ms (+-4)
+These values are essentially higher than those mentioned in [this section](#Typical ranges for the uncertainty.) because the real time is actually guaranteed to lie inside the range.
 
-## Why 
 
 
 ## [Spanner](http://static.googleusercontent.com/media/research.google.com/en//archive/spanner-osdi2012.pdf)
