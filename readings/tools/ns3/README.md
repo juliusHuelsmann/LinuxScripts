@@ -1,11 +1,11 @@
 
 # Installation instructions
-Even tough there is a good documentation for the installation of the ns3 network simulation tool, for convenience the prerequieries and steps for installing are summerized here. Attention: the net upgrade size is approx. equal to 2 GB.
+Even though there is a good documentation for the installation of the ns3 network simulation tool, for convenience the requires and steps for installing are summarized here. Attention: the net upgrade size is approx. equal to 2 GB.
 
 Ubuntu:
 ```bash
 # for a complete installation of all features, install the following packages to your copy of Ubuntu.
-sudo apt-get install gcc g++ python python-dev mercurial python-setuptools git qt4-dev-tools libqt4-dev cmake libc6-dev libc6-dev-i386 g++-multilib gdb valgrind gsl-bin libgsl2 libgsl-dev flex bison libfl-dev tcpdump sqlite sqlite3 libsqlite3-dev libxml2 libxml2-dev libgtk2.0-0 libgtk2.0-dev vtun lxc uncrustify doxygen graphviz imagemagick texlive texlive-extra-utils texlive-latex-extra texlive-font-utils texlive-lang-portugese dvipng python-sphinx dia python-pygraphviz python-kiwi python-pygoocanvas libgoocanvas-dev ipython libboost-signals-dev libboost-filesystem-dev openmpi-bin openmpi-common openmpi-doc libopenmpi-dev
+scudo apt-get install gcc g++ python python-dev mercurial python-setuptools git qt4-dev-tools libqt4-dev cmake libc6-dev libc6-dev-i386 g++-multilib gdb valgrind gsl-bin libgsl2 libgsl-dev flex bison libfl-dev tcpdump sqlite sqlite3 libsqlite3-dev libxml2 libxml2-dev libgtk2.0-0 libgtk2.0-dev vtun lxc uncrustify doxygen graphviz imagemagick texlive texlive-extra-utils texlive-latex-extra texlive-font-utils texlive-lang-portugese dvipng python-sphinx dia python-pygraphviz python-kiwi python-pygoocanvas libgoocanvas-dev ipython libboost-signals-dev libboost-filesystem-dev openmpi-bin openmpi-common openmpi-doc libopenmpi-dev
 ```
 
 Arch:
@@ -25,11 +25,11 @@ pacman -S doxygen flex goocanvas graphviz gsl gtk2 imagemagick libxml2 openmpi p
 # python2-pygraphviz	https://aur.archlinux.org/python2-pygraphviz.git 
 # gccxml-git		
 # goocanvasl		
-# Those packages can be installed using the ArchLinux User community repository (AUR), a collection of instructions to build user-devied packages.
+# Those packages can be installed using the Arch Linux User community repository (AUR), a collection of instructions to build user-defined packages.
 
 
-# Step 0:	Prerequieries that need to be set up once.
-pachman -S base-devel # this package is necessary for installing packages from AUR
+# Step 0:	Prerequires that need to be set up once.
+packman -S base-devel # this package is necessary for installing packages from AUR
 
 # Step 0a)	(recommended)
 # 		Packages are downoaded via SVN and updated via abs
@@ -80,14 +80,14 @@ export PYTHONPATH=H$PYTHONPATH:$BAKE_HOME:$BAKE_HOME/build/lib
 ./bake.py configure -e ns-3-allinone
 ./bake.py check
 ```
-check if every status is okay. Install missing tools if needed.Afterwards:
+check if every status is okay. Install missing tools if needed. Afterwards:
 ```bash
 ./bake.py download
 ```
 
 
 ### build
-The build command did not work properly at my machine for some unimportant functionalities. Workaround: link python and pip to  verision 2. 
+The build command did not work properly at my machine for some unimportant functionalities. Workaround: link python and pip to  version 2. 
 ```bash
 ./bake.py buid
 ./bake.py show
@@ -122,5 +122,6 @@ some waf commands are also meaningful after the installation (e.g. --enable-sudo
 ```
 
 ### Attention
-if folowed the workaround I proposed linking to the old pyhton version and suddenly errors occur, check whether the link has been updated in the meantime.
+if followed the workaround I proposed linking to the old python version and suddenly errors occur, check whether the link has been updated in the meantime.
+
 
