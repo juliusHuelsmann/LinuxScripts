@@ -16,36 +16,17 @@ Arch:
 sudo pacman -S base-devel mercurial python-setuptools qt4 qt5-tools boost boost-libs dia
 sudo pacman -S doxygen flex goocanvas graphviz gsl gtk2 imagemagick libxml2 openmpi pygtk python2-pydot python2-setuptools qt4 sqlite fakeroot findutils bzr gdb python2-sphinx texlive-bin tcpdump uncrustify valgrind wireshark-gtk gtk-doc svn
 
+
+#(recommended)
+# 		Packages are downoaded via SVN and updated via abs
+#		requires the packages to be located either in the 
+#		home directory or at /var/abs/local.
 groupadd abs            # add group for abs
-gpasswd -a juli abs     # add the current user to abs 
+gpasswd -a  [UNAME] abs     # add the current user to abs 
 mkdir -p /var/abs/local # add the directory which will contain the installation
 chown root:abs /var/abs/local
 chmod 775 /var/abs/local
 cd /var/abs/local
-
-
-git clone https://aur.archlinux.org/goocanvas1
-git clone https://aur.archlinux.org/gccxml-git
-git clone https://aur.archlinux.org/python2-pygraphviz
-git clone https://aur.archlinux.org/pygocanvas
-git clone https://aur.archlinux.org/pygccxml-svn
-
-
-echo "the aur files have been cloned to /var/abs/local."
-echo "please check the files PKGBUILD and [packagename].install"
-echo "manually for malicious commands"
-echo "and then run makepkg -si inside each repo separately."
-
-
-
-
-# install CVS
-sudo groupadd cvs
-sudo useradd -md /home/cvsroot -g cvs -p Insecure0 cvs
-sudo pacman -S cvs xinetd
-
-pacman -S base-devel mercurial python-setuptools qt4 qt5-tools boost boost-libs dia
-pacman -S doxygen flex goocanvas graphviz gsl gtk2 imagemagick libxml2 openmpi pygtk python2-pydot python2-setuptools qt4 sqlite fakeroot findutils bzr gdb python2-sphinx texlive-bin tcpdump uncrustify valgrind wireshark-gtk 
 
 # packages that are not in the official pacman list:
 # pygccxml-svn, 	
@@ -56,36 +37,38 @@ pacman -S doxygen flex goocanvas graphviz gsl gtk2 imagemagick libxml2 openmpi p
 # Those packages can be installed using the Arch Linux User community repository (AUR), a collection of instructions to build user-defined packages.
 
 
-# Step 0:	Prerequires that need to be set up once.
-packman -S base-devel # this package is necessary for installing packages from AUR
 
-# Step 0a)	(recommended)
-# 		Packages are downoaded via SVN and updated via abs
-#		requires the packages to be located either in the 
-#		home directory or at /var/abs/local.
-groupadd abs		# add group for abs
-gpasswd -a [UNAME] abs	# add the current user to abs 
-mkdir -p /var/abs/local	# add the directory which will contain the installation
-chown root:abs /var/abs/local
-chmod 775 /var/abs/local
-cd /var/abs/local
-
-
-# Step 1:	clone repository, checkout the commit belonging to the required version
 git clone https://aur.archlinux.org/goocanvas1
 git clone https://aur.archlinux.org/gccxml-git
 git clone https://aur.archlinux.org/python2-pygraphviz
-git clone https://aur.archlinux.org/pygoocanvas
+git clone https://aur.archlinux.org/pygocanvas
 git clone https://aur.archlinux.org/pygccxml-svn
 
-# Step 2: Build the files using
-makepkg -si # inside each repository. BUT consider:
+
+# Build the files using
+# makepkg -si # inside each repository. BUT consider:
 # the aur files have been cloned to /var/abs/local.
 # please check the files PKGBUILD and [packagename].install
 # manually for malicious commands
 # and then run makepkg -si inside each repo separately
+
+echo "the aur files have been cloned to /var/abs/local."
+echo "please check the files PKGBUILD and [packagename].install"
+echo "manually for malicious commands"
+echo "and then run makepkg -si inside each repo separately."
+
 ```
-It is not possible to install the pygoocanvas directly due to a bug in the automake routine. Bugfix: temporarily remap python to python2.7. 
+For arch users: It is not possible to install the pygoocanvas directly due to a bug in the automake routine. Bugfix: temporarily remap python to python2.7. 
+
+
+```
+
+# install CVS
+sudo groupadd cvs
+sudo useradd -md /home/cvsroot -g cvs -p Insecure0 cvs
+sudo pacman -S cvs xinetd
+```
+
 
 ## Install ns3
 ```bash
