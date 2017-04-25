@@ -149,13 +149,12 @@ git clone git@github.com:gccxml/gccxml.git
 
 cd gccxml
 
-curl "http://pkgs.fedoraproject.org/cgit/rpms/gccxml.git/plain/gccxml-gcc5.patch?h=f22" file.patch
+curl "http://pkgs.fedoraproject.org/cgit/rpms/gccxml.git/plain/gccxml-gcc5.patch?h=f22" > file.patch
 git apply -v file.patch
 mkdir gccxml-build
 
 cd gccxml-build
-#cmake ../gccxml
-cmake ../gccxml -DCMAKE_INSTALL_PREFIX:PATH=../../build -DCMAKE_C_FLAGS=-fgnu89-inline
+cmake .. -DCMAKE_INSTALL_PREFIX:PATH=../../build -DCMAKE_C_FLAGS=-fgnu89-inline
 make -j 16
 sudo make install
 ```
