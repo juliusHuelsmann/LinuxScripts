@@ -15,6 +15,7 @@ Arch:
 
 sudo pacman -S base-devel mercurial python-setuptools qt4 qt5-tools boost boost-libs dia
 sudo pacman -S doxygen flex goocanvas graphviz gsl gtk2 imagemagick libxml2 openmpi pygtk python2-pydot python2-setuptools qt4 sqlite fakeroot findutils bzr gdb python2-sphinx texlive-bin tcpdump uncrustify valgrind wireshark-gtk gtk-doc svn
+sudo pacman -S cvs xinetd
 
 
 #(recommended)
@@ -60,13 +61,34 @@ echo "and then run makepkg -si inside each repo separately."
 ```
 For arch users: It is not possible to install the pygoocanvas directly due to a bug in the automake routine. Bugfix: temporarily remap python to python2.7. 
 
+# Second step
+
 
 ```
+sudo groupadd cvs
+sudo useradd -md /home/cvsroot -g cvs -p Insecure0 cvs
+
+cd
+mkdir workspace-ns3
+cd workspace-ns3
+hg clone http://code.nsnam.org/bake
+
+export BAKE_HOME='pwd'
+export PATH=$PATH:$BAKE_HOME:$BAKE_HOME/build/bin
+export PYTHONPATH=H$PYTHONPATH:$BAKE_HOME:$BAKE_HOME/build/lib
+
+cd bake
+./bake.py configure -e ns-3-allinone
+./bake.py check
+
+# check status!
+
+
+
 
 # install CVS
 sudo groupadd cvs
 sudo useradd -md /home/cvsroot -g cvs -p Insecure0 cvs
-sudo pacman -S cvs xinetd
 ```
 
 
