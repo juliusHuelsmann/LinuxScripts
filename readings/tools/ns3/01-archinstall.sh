@@ -1,7 +1,7 @@
 # don't call as root
 
 sudo pacman -S base-devel mercurial python-setuptools qt4 qt5-tools boost boost-libs dia
-sudo pacman -S doxygen flex goocanvas graphviz gsl gtk2 imagemagick libxml2 openmpi pygtk python2-pydot python2-setuptools qt4 sqlite fakeroot findutils bzr gdb python2-sphinx texlive-bin tcpdump uncrustify valgrind wireshark-gtk gtk-doc svn
+sudo pacman -S doxygen flex goocanvas graphviz gsl gtk2 imagemagick libxml2 openmpi pygtk python2-pydot python2-setuptools qt4 sqlite fakeroot findutils bzr gdb python2-sphinx texlive-bin tcpdump uncrustify valgrind wireshark-gtk gtk-doc svn cvs xinetd
 
 groupadd abs        # add group for abs
 gpasswd -a juli abs  # add the current user to abs 
