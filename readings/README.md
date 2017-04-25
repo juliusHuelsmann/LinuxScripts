@@ -14,7 +14,7 @@ This folder contains notes on articles or papers that I read recently.
 6. [Algorithms and Concept](algorithms)
 	- [Blockchain](algorithms/blockchain)
 	- [MachineLearning](algorithms/machineLearning)
-7. [Programming Languages](proglan)
+7. [Programming Languages](proglang)
 
 ## List of papers
 Attached a list of the papers and articles in chronological order, linked to the appropriate topic.
