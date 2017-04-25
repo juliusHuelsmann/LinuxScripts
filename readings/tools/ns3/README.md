@@ -12,7 +12,7 @@ Arch:
 There is no entire list of all recommended packages, I will list the packages I needed to add at my already set-up arch operating system below: 
 ```bash
 pacman -S base-devel mercurial python-setuptools qt4 qt5-tools boost boost-libs dia
-pacman -S doxygen flex goocanvas graphviz gsl gtk2 imagemagick libxml2 openmpi pygtk python2-pydot python2-setuptools qt4 sqlite fakeroot findutils bzr gdb python2-sphinx texlive-bin tcpdump uncrustify valgrind wireshark-gtk gtk-doc
+pacman -S doxygen flex goocanvas graphviz gsl gtk2 imagemagick libxml2 openmpi pygtk python2-pydot python2-setuptools qt4 sqlite fakeroot findutils bzr gdb python2-sphinx texlive-bin tcpdump uncrustify valgrind wireshark-gtk gtk-doc svn
 
 # packages that are not in the official pacman list:
 # pygccxml-svn, 	
@@ -39,13 +39,19 @@ cd /var/abs/local
 
 
 # Step 1:	clone repository, checkout the commit belonging to the required version
-
-
-
-git clone https://aur.archlinux.org/goocanvasl
+git clone https://aur.archlinux.org/goocanvas1
 git clone https://aur.archlinux.org/gccxml-git
 git clone https://aur.archlinux.org/python2-pygraphviz
-git clone https://aur.archlinux.org/pygocanvas
+git clone https://aur.archlinux.org/pygoocanvas
 git clone https://aur.archlinux.org/pygccxml-svn
+
+# Step 2: Build the files using
+makepkg -si # inside each repository. BUT consider:
+# the aur files have been cloned to /var/abs/local.
+# please check the files PKGBUILD and [packagename].install
+# manually for malicious commands
+# and then run makepkg -si inside each repo separately
 ```
+It is not possible to install the pygoocanvas directly due to a bug in the automake routine. Bugfix: temporarily remap python to python2.7. 
+
 
