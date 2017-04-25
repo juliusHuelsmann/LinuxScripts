@@ -2,14 +2,35 @@
 # Installation instructions
 There is official documentation for installation of the ns3 network simulation tool for ubuntu. For my copy of ubuntu, those instructions where not sufficient. Thus, for convenience the required steps for installing are summarized here. Attention: the net upgrade size is approx. 2 GB. I also generated install scripts for Ubuntu and arch from the commands listed below.
 
+The install instructions are separated into different steps in which the user has to check the output or interfer manually.
+
 ## First step
 Ubuntu:
 ```bash
 # for a complete installation of all features, install the following packages to your copy of Ubuntu.
-scudo apt-get install gcc g++ python python-dev mercurial python-setuptools git qt4-dev-tools libqt4-dev cmake libc6-dev libc6-dev-i386 g++-multilib gdb valgrind gsl-bin libgsl2 libgsl-dev flex bison libfl-dev tcpdump sqlite sqlite3 libsqlite3-dev libxml2 libxml2-dev libgtk2.0-0 libgtk2.0-dev vtun lxc uncrustify doxygen graphviz imagemagick texlive texlive-extra-utils texlive-latex-extra texlive-font-utils texlive-lang-portugese dvipng python-sphinx dia python-pygraphviz python-kiwi python-pygoocanvas libgoocanvas-dev ipython libboost-signals-dev libboost-filesystem-dev openmpi-bin openmpi-common openmpi-doc libopenmpi-dev
+sudo apt-get install gcc g++ python python-dev mercurial python-setuptools git qt4-dev-tools libqt4-dev cmake libc6-dev g++-multilib gdb valgrind gsl-bin libgsl2 libgsl-dev flex bison libfl-dev tcpdump sqlite sqlite3 libsqlite3-dev libxml2 libxml2-dev libgtk2.0-0 libgtk2.0-dev vtun lxc uncrustify doxygen graphviz imagemagick texlive texlive-extra-utils texlive-latex-extra texlive-font-utils dvipng python-sphinx dia python-pygraphviz python-kiwi python-pygoocanvas libgoocanvas-dev ipython libboost-signals-dev libboost-filesystem-dev openmpi-bin openmpi-common openmpi-doc libopenmpi
+#sudo apt-get install libc6-dev-i386 
+
+# the following packages are added manually because they are not listed
+# as requirements in the official documentation
+sudo apt-get install mercurial xinetd cvs 
+sudo apt-get install dh-autoreconf unrar
+sudo apt-get install p7zip
+sudo apt-get install cmake autoconf
+sudo apt-get install p7zip-full
+sudo apt-get install bzr
+
+
+sudo apt-get install flex bison
+sudo apt-get install python-pygoocanvas qt4-default python-dev libxml2-dev python-pygraphviz gccxml libgccxml-dev python3-pygraphviz
+sudo apt-get install gccxml python-ctypeslib python-py++
+sudo pip install pygccxml
+
 ```
 
 Arch:
+
+Change the [Username] manually.
 ```bash
 # don't call as root
 
@@ -62,45 +83,52 @@ echo "and then run makepkg -si inside each repo separately."
 For arch users: It is not possible to install the pygoocanvas directly due to a bug in the automake routine. Bugfix: temporarily remap python to python2.7. 
 
 # Second step
-
-
+Check the status of the output of step 2.
 ```
 sudo groupadd cvs
 sudo useradd -md /home/cvsroot -g cvs -p Insecure0 cvs
 
+# clone repository
 cd
 mkdir workspace-ns3
 cd workspace-ns3
 hg clone http://code.nsnam.org/bake
 
+# set up bake environment
 export BAKE_HOME='pwd'
 export PATH=$PATH:$BAKE_HOME:$BAKE_HOME/build/bin
 export PYTHONPATH=H$PYTHONPATH:$BAKE_HOME:$BAKE_HOME/build/lib
 
+# bake 
 cd bake
 ./bake.py configure -e ns-3-allinone
 ./bake.py check
 
 # check status!
-
-
-
-
-# install CVS
-sudo groupadd cvs
-sudo useradd -md /home/cvsroot -g cvs -p Insecure0 cvs
 ```
 
 
 ## Install ns3
 ```bash
-cd
-mkdir workspace-ns3
+cd 
 cd workspace-ns3
-hg clone http://code.nsnam.org/bake
+cd bake
+
+
+./bake.py download
+./bake.py build
+./bake.py show
+cd source/ns-3-dev
+./waf clean
+./waf configure --build-profile=debug --enable-examples --enable-tests
+./waf
+
+
+
+
 ```
 
-### set up bake env
+
 ```bash
 export BAKE_HOME='pwd'
 export PATH=$PATH:$BAKE_HOME:$BAKE_HOME/build/bin
