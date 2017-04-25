@@ -107,8 +107,11 @@ cd bake
 # check status!
 ```
 
+check if every status is okay. Install missing tools if needed. Afterwards:
 
 ## Install ns3
+
+The build command did not work properly at my machine for some unimportant functionalities. Workaround: link python and pip to  version 2. 
 ```bash
 cd 
 cd workspace-ns3
@@ -124,41 +127,7 @@ cd source/ns-3-dev
 ./waf
 
 
-
-
 ```
-
-
-```bash
-export BAKE_HOME='pwd'
-export PATH=$PATH:$BAKE_HOME:$BAKE_HOME/build/bin
-export PYTHONPATH=H$PYTHONPATH:$BAKE_HOME:$BAKE_HOME/build/lib
-```
-
-
-### baking
-```bash
-./bake.py configure -e ns-3-allinone
-./bake.py check
-```
-check if every status is okay. Install missing tools if needed. Afterwards:
-```bash
-./bake.py download
-```
-
-
-### build
-The build command did not work properly at my machine for some unimportant functionalities. Workaround: link python and pip to  version 2. 
-```bash
-./bake.py buid
-./bake.py show
-cd src/ns3-dev
-./waf clean
-./waf configure --build-profile=debug --enable-examples --enable-tests
-./waf
-```
-
-
 
 
 # Important information
