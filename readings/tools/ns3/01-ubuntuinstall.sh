@@ -9,3 +9,9 @@ sudo apt-get install p7zip
 sudo apt-get install cmake autoconf
 sudo apt-get install p7zip-full
 sudo apt-get install bzr
+
+
+sudo apt-get install flex bison
+sudo apt-get install python-pygoocanvas qt4-default python-dev libxml2-dev python-pygraphviz gccxml libgccxml-dev python3-pygraphviz
+sudo apt-get install gccxml python-ctypeslib python-py++
+sudo pip install pygccxml
