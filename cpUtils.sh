@@ -9,8 +9,8 @@ xcp () {
 			echo "Copied successfully $1 to $2."
 		else
 			echo "Not copied: The file that is to be overwritten is newer than the configuration file inside the repository."
-			echo "tried to overwrite:  $1"
-			echo "new file:            $2"
+			echo "tried to overwrite:  $2"
+			echo "new file:            $1"
 	fi
 	
 }
