@@ -109,7 +109,7 @@ cd bake
 
 check if every status is okay. Install missing tools if needed. Afterwards:
 
-## Install ns3
+## Third step
 
 The build command did not work properly at my machine for some unimportant functionalities. Workaround: link python and pip to  version 2. 
 ```bash
@@ -128,6 +128,39 @@ cd source/ns-3-dev
 
 
 ```
+# Fourth step
+Apply a few more bugfixes:
+
+In case gccxml-ns3 failed (which will always be the case unless you are using a very ancient version of ubuntu:
+```
+
+# A bugfix needs to be done first for installing the (obsolete) 
+# package gccxml.
+# It turns out that the gccxml package can only be compiled using a very 
+# old version of gcc.
+# a patch to the repository is applied and downloaded automatically.
+# see: https://groups.google.com/forum/#!topic/ns-3-users/2xwbyrQcQCc
+
+
+# the quotation marks are actually a bugfix for zsh users.
+git clone git@github.com:gccxml/gccxml.git
+
+
+
+cd gccxml
+
+curl "http://pkgs.fedoraproject.org/cgit/rpms/gccxml.git/plain/gccxml-gcc5.patch?h=f22" file.patch
+git apply -v file.patch
+mkdir gccxml-build
+
+cd gccxml-build
+#cmake ../gccxml
+cmake ../gccxml -DCMAKE_INSTALL_PREFIX:PATH=../../build -DCMAKE_C_FLAGS=-fgnu89-inline
+make -j 16
+sudo make install
+```
+
+Run step 4 again afterwards
 
 
 # Important information
