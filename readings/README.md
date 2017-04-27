@@ -18,6 +18,7 @@ This folder contains notes on articles or papers that I read recently.
 
 ## List of papers
 Attached a list of the papers and articles in chronological order, linked to the appropriate topic.
+- [ ] http://sebastianraschka.com/Articles/2015_pca_in_3_steps.html
 - [ ] [6](algorithms): TCP/IP Sockets in C, 2nd Edition
 - [ ] [6](algorithms): Multicast Sockets, 1st Edition
 - [ ] [7](proglan): [C tutorial](http://www.cplusplus.com/doc/tutorial/)
@@ -25,4 +26,3 @@ Attached a list of the papers and articles in chronological order, linked to the
 - [ ] [6](algorithms): [Caffee framework](http://caffe.berkeleyvision.org/)
 - [x] [6](algorithms): [Leap-second smearing](https://googleblog.blogspot.de/2011/09/time-technology-and-leaping-seconds.html)
 - [ ] [6](algorithms): [Paxos](http://harry.me/blog/2014/12/27/neat-algorithms-paxos/)
-
