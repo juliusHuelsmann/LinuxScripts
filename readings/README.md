@@ -1,6 +1,7 @@
 # [../](../..) Readings
 This folder contains notes on articles or papers that I read recently.
 
+
 ## List of topics 
 1. [Operating System](operatingSystem)
 2. [Databases](databases)
@@ -25,4 +26,7 @@ Attached a list of the papers and articles in chronological order, linked to the
 - [ ] [6](algorithms): [Caffee framework](http://caffe.berkeleyvision.org/)
 - [x] [6](algorithms): [Leap-second smearing](https://googleblog.blogspot.de/2011/09/time-technology-and-leaping-seconds.html)
 - [ ] [6](algorithms): [Paxos](http://harry.me/blog/2014/12/27/neat-algorithms-paxos/)
+- [ ] [ ](): actor model
 
+## ideas
+- rust programming language .
