@@ -18,6 +18,7 @@ This folder contains notes on articles or papers that I read recently.
 
 ## List of papers
 Attached a list of the papers and articles in chronological order, linked to the appropriate topic.
+- [ ] https://www.youtube.com/watch?v=fHgk7aDGn_4
 - [ ] http://sebastianraschka.com/Articles/2015_pca_in_3_steps.html
 - [ ] [6](algorithms): TCP/IP Sockets in C, 2nd Edition
 - [ ] [6](algorithms): Multicast Sockets, 1st Edition
