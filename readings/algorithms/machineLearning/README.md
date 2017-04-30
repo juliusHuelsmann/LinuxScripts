@@ -1,5 +1,5 @@
 # Fundamental basics
-Let $x\in \R^M$ and $X:= (x_1, \dots, x_p)$
+Let $x\in \mathbb{R}^M$ and $X:= (x_1, \dots, x_p)$
 $$ m:= \frac{1}{p} \sum\limits_{\alpha=1}^{p}x^\alpha$$
 $$ C_ij := \frac{1}{p-1} \sum\limits_{\alpha=1}^{p} (x_i^\alpha - m_i)^T(x_j^\alpha - m_j)$$
 - uncorrolated <= independend but
@@ -28,9 +28,9 @@ $$ C_ij := \frac{1}{p-1} \sum\limits_{\alpha=1}^{p} (x_i^\alpha - m_i)^T(x_j^\al
 
 ## Motivation
 Find the directions in which the data has the highest variance.
-$$\begin{align} argmax_{e_a} Variance \text{ algon } e_a \qquad s.t. \|e_a\| = 1\\
-argmax e_a^T C e_a s.t. \|e_a\|^2_2 = 1\\
-max e_a^T C e_a - (e_a^T e_a - 1) \lambda$$
+$$\begin{align} \text{arg}\max\limits_{e_a} \text{ Variance algon } e_a \qquad &s.t.\qquad \|e_a\| = 1\\
+\text{arg}\max\limits_{e_a} C \cdot e_a \qquad &s.t. \qquad\|e_a\|^2_2 = 1\\
+\max\limits_{e_a} e_a^T \cdot C \cdot e_a \qquad&- \qquad(e_a^T e_a - 1) \lambda \end{align}$$
 derivation yields to the followin ev problem
 $$ Ce_a = \lambda e_a$$
 which is a necessary condition for an extrem point.
