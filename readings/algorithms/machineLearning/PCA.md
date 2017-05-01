@@ -56,4 +56,34 @@ yields to taking the eigenvector with the largest eigenvalue.
 ## Novelty filter
 Idea: Compare data by checking if it has the same properties concerning small variation directions:
 
+# Kernalized PCA - Kernel trick
+- Problems:
+	- X^T x very large
+	- too few samples for a robust estimate of the covariance matrix.
 
+- Motivation
+	- We know the evec is approx a linear combination of the different data points $X = (x_1, \dots, x_N) \in \mathbb{R}^{D\times N}$ for $N < D$
+	- substitute $w = X \alpha$
+	- Solve $X X^T X \alpha  = \lambda X \alpha$ instead of $X X^T w = \lambda w$
+	- we call $X^TX \in \mathbb R^{N,N}$ the kernel 
+	- and solve $X^TX \alpha = \lambda \alpha$ (lower dimensional)
+
+## Properties
+- Extends PCA to potentially nonlinear dependencies
+- makes PCA applicable to highdim data.
+
+# Relation to SVD
+$$X=ESF$$
+- $E, F$ orthogonal
+- $S$ diagonal
+
+$$\begin{align} XX^T = ESFF^TS^TE^T = E S^2 E^T\end{align}$$
+$$\begin{align} X^TX = F^TS^TE^TESF= F^T S^2 F\end{align}$$
+
+- Thus $E$ ev of $XX^T$, $F$ of $X^TX$ and $S$ sqrt of EVAl
+
+## Relation Linear kernel PCA to classical PCA
+
+
+The relation to the linear kernel lies in 
+$$ ES = XF^T$$???#noclue
