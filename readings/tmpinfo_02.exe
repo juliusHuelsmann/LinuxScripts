@@ -1,0 +1,20 @@
+
+# psql -d postgres
+# remember to do the ';'
+select * from users;
+
+# meine id ist = 25
+# vi = 20
+# ROLE_USER
+# ROLE_ADMIN
+
+select id from users where github_username=...;
+select * from authority where id=...;
+insert into authorities VALUES ('ROLE_ADMIN', 1);
+
+
+#name  
+select * from authorities;
+
+# 
+# 
