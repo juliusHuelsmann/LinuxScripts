@@ -1,0 +1,39 @@
+
+
+
+/apps/evaltool-worker/
+
+
+1.) /apps/evaltool-worker/conf
+Structure of the repository (evaltoolworker01)
+# JVOM classpath: contains all the reference solutions that are currently working and some other properties
+
+2.) .../bin
+contains worker.sh that is to be started / stopped.
+
+3.) .../tmp
+contains the submission jar files of the different teams
+
+
+
+
+# not important
+# lib contains libraries
+
+
+
+
+
+--- evaltool@duck-3.dima.tu-berlin.de
+- contains database
+- contains webapp (/apps/evaltool)
+- psql 
+
+# evaltool 
+- psqldump.sh # generates backup of the evaltool database
+
+/home/evaltool
+archive/ - contains snapshots of the evaltool sql database
+
+
+/home/evaltool/apps/evaltool-webapp/bin/../conf:/home/eval
