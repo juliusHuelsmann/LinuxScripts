@@ -19,6 +19,7 @@ This folder contains notes on articles or papers that I read recently.
 
 ## List of papers
 Attached a list of the papers and articles in chronological order, linked to the appropriate topic.
+- [ ] https://www.tensorflow.org/get_started/
 - [ ] http://ahmedbesbes.com/how-to-score-08134-in-titanic-kaggle-challenge.html#.WRSPhDQgLa0.hackernews
 - [ ] https://codewords.recurse.com/issues/two/git-from-the-inside-out git from the inside out
 - [ ] https://www.youtube.com/watch?v=fHgk7aDGn_4
