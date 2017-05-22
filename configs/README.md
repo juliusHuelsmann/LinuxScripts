@@ -23,6 +23,14 @@ sudo pythonX upgradepip.py
 
 
 ### Installation
+
+#### Pip packages
+```
+nbdime, 
+numpy, scipy, pandas, 
+```
+
+
 #### Jupyter-notebook diff python tool
 
 ```bash
@@ -40,6 +48,8 @@ nbdiff-web [ref [ref]]
 nbdiff-web file1 file2
 # Merge conflict could not be resolved? Browse differences in web tool
 nbdime mergetool
+
+
 
 
 
