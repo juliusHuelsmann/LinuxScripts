@@ -26,7 +26,14 @@ sudo pythonX upgradepip.py
 
 #### Pip packages
 ```
-nbdime, 
+
+# Jupyter-notebook diff tool
+nbdime
+
+# python package that is used to automatically calculate a huge number of time series characteristics
+tsfresh
+
+# packages used since always
 numpy, scipy, pandas, 
 ```
 
