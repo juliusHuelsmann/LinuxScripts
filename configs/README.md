@@ -23,5 +23,9 @@ nbdime config-git --enable --global
 
 # (after integration): web diff between references of jupyternotebook.
 nbdime-web [ref [ref]]
+# Merge conflict could not be resolved? Browse differences in web tool
+nbdime mergetool
+
+
 
 ```
