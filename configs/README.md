@@ -20,4 +20,8 @@ nbdiff-web notebook_1.ipynb notebook_2.ipynb
 
 # integrate into git diff and merge
 nbdime config-git --enable --global
+
+# (after integration): web diff between references of jupyternotebook.
+nbdime-web [ref [ref]]
+
 ```
