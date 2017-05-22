@@ -11,8 +11,14 @@ notify-send "string" # for sending information (e.g. on git updates, battery pow
 
 ### Commands
 ```bash
+# jupyter-notebook diffs
 nbdiff-web [ref [ref]]
 nbdiff-web file1 file2
+
+# pip update all installed packages via pip
+pip freeze --local | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip install -U
+
+
 ```
 
 
