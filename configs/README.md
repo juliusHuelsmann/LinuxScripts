@@ -7,9 +7,17 @@ notify-send "string" # for sending information (e.g. on git updates, battery pow
 
 
 
-## Useful Installations
+## Useful Commands / Installations
 
-### Jupyter-notebook diff python tool
+### Commands
+```bash
+nbdiff-web [ref [ref]]
+nbdiff-web file1 file2
+```
+
+
+### Installation
+#### Jupyter-notebook diff python tool
 
 ```bash
 pip install nbdime
@@ -22,7 +30,8 @@ nbdiff-web notebook_1.ipynb notebook_2.ipynb
 nbdime config-git --enable --global
 
 # (after integration): web diff between references of jupyternotebook.
-nbdime-web [ref [ref]]
+nbdiff-web [ref [ref]]
+nbdiff-web file1 file2
 # Merge conflict could not be resolved? Browse differences in web tool
 nbdime mergetool
 
