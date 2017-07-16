@@ -1,14 +1,35 @@
-# i3 config file (v4)
-# Please see http://i3wm.org/docs/userguide.html for a complete reference!
+# Information:
+#
+# Mod
+#   - Mod1 = <Alt>
+#   - Mod4 = <Super>
+#
+# Border-style
+#   - normal|1pixel|pixel 
+#   - xx|none|pixel
 
-# Set mod key (Mod1=<Alt>, Mod4=<Super>)
+#############
+# Shortcuts #
+#############
+
+# start a terminal
+bindsym $mod+Return exec i3-sensible-terminal
+
+# kill focused window
+bindsym $mod+Shift+q kill
+
+# start program launcher
+bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+
+# launch categorized menu
+bindsym $mod+z exec --no-startup-id morc_menu
+
+####################
+# General Settings #
+####################
+
 set $mod Mod4
-
-# set default desktop layout (default is tiling)
-# workspace_layout tabbed <stacking|tabbed>
-
-# Configure border style <normal|1pixel|pixel xx|none|pixel>
-new_window pixel 1
+new_window pixel 1 
 new_float normal
 
 # Hide borders
@@ -26,17 +47,7 @@ font xft:Noto Sans 9
 # Use Mouse+$mod to drag floating windows
 floating_modifier $mod
 
-# start a terminal
-bindsym $mod+Return exec terminal
 
-# kill focused window
-bindsym $mod+Shift+q kill
-
-# start program launcher
-bindsym $mod+d exec --no-startup-id dmenu_recency
-
-# launch categorized menu
-bindsym $mod+z exec --no-startup-id morc_menu
 
 ################################################################################################
 ## sound-section - DO NOT EDIT if you wish to automatically upgrade Alsa -> Pulseaudio later! ##
@@ -68,15 +79,16 @@ bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart du
 bindsym Print exec --no-startup-id i3-scrot
 bindsym $mod+Print --release exec --no-startup-id i3-scrot -w
 bindsym $mod+Shift+Print --release exec --no-startup-id i3-scrot -s
-bindsym $mod+Shift+h exec xdg-open /usr/share/doc/manjaro/i3_help.pdf
+#bindsym $mod+Shift+h exec xdg-open /usr/share/doc/manjaro/i3_help.pdf
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 
 # focus_follows_mouse no
 
 # change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
+bindsym $mod+h focus left
+bindsym $mod+j focus down 
+bindsym $mod+k focus up 
+bindsym $mod+l focus right
 bindsym $mod+odiaeresis focus right
 
 # alternatively, you can use the cursor keys:
@@ -86,9 +98,10 @@ bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
 # move focused window
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
 bindsym $mod+Shift+odiaeresis move right
 
 # alternatively, you can use the cursor keys:
@@ -103,7 +116,7 @@ bindsym $mod+b workspace back_and_forth
 bindsym $mod+Shift+b move container to workspace back_and_forth; workspace back_and_forth
 
 # split orientation
-bindsym $mod+h split h;exec notify-send 'tile horizontally'
+bindsym $mod+Shift+v split h;exec notify-send 'tile horizontally'
 bindsym $mod+v split v;exec notify-send 'tile vertically'
 bindsym $mod+q split toggle
 
@@ -143,9 +156,10 @@ bindsym $mod+Ctrl+Left workspace prev
 
 #
 # move workspace to the left window
-bindsym $mod+c move workspace to output left
 # bindsym $mod+Alt_L+Right move workspace to output right
-
+#bindsym $mod+c move workspace to output left
+#bindsym $mod+c move workspace to output above 
+bindsym $mod+c move workspace to output left 
 
 
 # Workspace names
@@ -171,7 +185,7 @@ bindsym $mod+5 workspace $ws5
 bindsym $mod+6 workspace $ws6
 bindsym $mod+7 workspace $ws7
 bindsym $mod+8 workspace $ws8
-
+bindsym $mod+9 workspace $ws9
 
 
 # Move focused container to workspace
@@ -183,6 +197,8 @@ bindsym $mod+Ctrl+5 move container to workspace $ws5
 bindsym $mod+Ctrl+6 move container to workspace $ws6
 bindsym $mod+Ctrl+7 move container to workspace $ws7
 bindsym $mod+Ctrl+8 move container to workspace $ws8
+bindsym $mod+Ctrl+9 move container to workspace $ws9
+
 
 # Move to workspace with focused container
 bindsym $mod+Shift+1 move container to workspace $ws1; workspace $ws1
@@ -193,10 +209,11 @@ bindsym $mod+Shift+5 move container to workspace $ws5; workspace $ws5
 bindsym $mod+Shift+6 move container to workspace $ws6; workspace $ws6
 bindsym $mod+Shift+7 move container to workspace $ws7; workspace $ws7
 bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
+bindsym $mod+Shift+9 move container to workspace $ws9; workspace $ws9
 
 # Open applications on specific workspaces
 assign [class="Thunderbird"] $ws9
-assign [class="Chromium"] $ws8
+# assign [class="qutebrowser"] $ws8
 # assign [class="Pale moon"] $ws2
 # assign [class="Pcmanfm"] $ws3
 # assign [class="Skype"] $ws5
@@ -283,7 +300,7 @@ mode "resize" {
 }
 
 # Lock screen
-bindsym $mod+9 exec --no-startup-id blurlock
+# bindsym $mod+9 exec --no-startup-id blurlock
 
 # Autostart applications
 ## adjustment of i3bar battery reading (only run at the very first login):
@@ -296,34 +313,41 @@ exec --no-startup-id pamac-tray
 exec --no-startup-id clipit
 # exec --no-startup-id blueman
 # exec_always --no-startup-id sbxkb
-exec --no-startup-id start_conky_custom
-#exec --no-startup-id start_conky_maia
+# exec --no-startup-id start_conky_custom
+# exec --no-startup-id start_conky_maia
 # exec --no-startup-id start_conky_green
 exec --no-startup-id xautolock -time 10 -locker blurlock
 exec_always --no-startup-id fix_xcursor
 
 # Start i3bar to display a workspace bar (plus the system information i3status if available)
 bar {
-	status_command i3status
-	position bottom
+	status_command i3status | ~/.config/i3status/contrib/wrapper.py | ~/.config/i3status/contrib/wrapper.pi | ~/.config/i3status/contrib/net-speed.sh
+	#status_command i3status
+	position top
+	
+
+
+	separator_symbol "  "
 
 ## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
-#	tray_output primary
-#	tray_output eDP1
+##	tray_output primary
+##	tray_output eDP1
 
 	bindsym button4 nop
 	bindsym button5 nop
-	font xft:Noto Sans 8.5
+	#font xft:Noto Sans 8.5
+	font xft:Courier New 9.0
 	strip_workspace_numbers yes
 
 	colors {
-#	background $transparent
-#		background $transparent
-		background #2B2C2B
+##		background $transparent
+		background #1f1f2e
+		#background #001a33
+		#background #2B2C2B
                 statusline #F9FAF9
-		separator  #454947
-
-#                                  border  backgr. text
+		separator  #0099cc
+#		separator  #454947
+#                                 border  backgr. text
 		focused_workspace  #425E8F #476FB3 #2B2C2B
 		active_workspace   #595B5B #353836 #FDF6E3
 		inactive_workspace #595B5B #353836 #EEE8D5
@@ -331,12 +355,14 @@ bar {
 	}
 }
 
+
+
 # hide/unhide i3status bar
 bindsym $mod+m bar mode toggle
 
 # Theme colors
 # class                 border  backgr. text    indic.  child_border
-client.focused          #808280 #808280 #80FFF9 #FDF6E3
+client.focused          #ff0000 #808280 #80FFF9 #FDF6E3
 client.focused_inactive #434745 #434745 #16A085 #454948
 client.unfocused        #434745 #434745 #16A085 #454948
 client.urgent           #CB4B16 #FDF6E3 #16A085 #268BD2
@@ -349,8 +375,8 @@ client.background       #2B2C2B
 #############################
 
 # Set inner/outer gaps
-gaps inner 0
-gaps outer -4
+# gaps inner 0
+# gaps outer -4
 
 # Additionally, you can issue commands with the following syntax. This is useful to bind keys to changing the gap size.
 # gaps inner|outer current|all set|plus|minus <px>
@@ -358,11 +384,11 @@ gaps outer -4
 # gaps outer all plus 5
 
 # Smart gaps (gaps used if only more than one container on the workspace)
-smart_gaps on
+# smart_gaps on
 
 # Smart borders (draw borders around container only if it is not the only container on this workspace) 
 # on|no_gaps (on=always activate and no_gaps=only activate if the gap size to the edge of the screen is 0)
-smart_borders on
+# smart_borders on
 
 # Press $mod+Shift+g to enter the gap mode. Choose o or i for modifying outer/inner gaps. Press one of + / - (in-/decrement for current workspace) or 0 (remove gaps for current workspace). If you also press Shift with these keys, the change will be global for all workspaces.
 set $mode_gaps Gaps: (o) outer, (i) inner
@@ -408,10 +434,13 @@ mode "$mode_gaps_outer" {
 # bindsym $mod+shift+x exec i3lock
 bindsym $mod+shift+x  exec --no-startup-id blurlock
 
-#exec_always feh --bg-scale ~/.i3/bg2.img
-exec_always feh --bg-scale ~/.i3/w.jpg
-exec chromium
+
+exec_always feh --bg-scale ~/.i3/4.jpg
+#exec_always feh --bg-scale ~/.i3/NxmAzdu-storm-clouds-wallpaper.jpg
+#exec_always feh --bg-scale ~/.i3/w.jpg
 exec blueman-applet
+exec --no-startup-id i3-msg 'workspace $ws8; exec qutebrowser'
+
 
 # window binding to workspace
 # For assign [class=..] $workspace10
