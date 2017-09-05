@@ -33,6 +33,7 @@ Attached a list of the papers and articles in chronological order, linked to the
 - [ ] [6](algorithms): [Paxos](http://harry.me/blog/2014/12/27/neat-algorithms-paxos/)
 - [ ] [ ](): actor model
 - [ ] Calcurse! 
+- [ ] https://blog.algorithmia.com/becoming-a-10x-data-scientist/
 
 
 
