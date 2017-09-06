@@ -9,6 +9,19 @@ notify-send "string" # for sending information (e.g. on git updates, battery pow
 
 ## Useful Commands / Installations
 
+### Remapping Left/ Right key to Caps + HJKL
+- `xev` for finding out that caps = 66
+- xmodmap ~/.Xmodmap
+```
+clear Lock
+keycode 66 = ISO_Level3_Shift
+```
+- sudo vim `/usr/share/X11/xkb/symbols/de`
+```
+stuff
+```
+
+
 ### Commands
 ```bash
 # jupyter-notebook diffs
