@@ -9,6 +9,10 @@ notify-send "string" # for sending information (e.g. on git updates, battery pow
 
 ## Useful Commands / Installations
 
+### Font cousine
+sudo pacman -S ttf-croscore
+
+
 ### Remapping Left/ Right key to Caps + HJKL
 - `xev` for finding out that caps = 66
 - xmodmap ~/.Xmodmap
