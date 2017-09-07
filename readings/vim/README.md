@@ -38,6 +38,11 @@ ZZ
 
 
 
+### Folds
+zM close all folds
+zj / zk goto prev, next fold
+set foldmethod=XXX set the foldmethod
+
 ` :map <buffer> ... ` only maps the keybinding inside the current buffer
 In general, in that case, the localleader should be preferred over
 the global leader.
