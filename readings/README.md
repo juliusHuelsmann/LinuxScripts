@@ -37,9 +37,12 @@ Attached a list of the papers and articles in chronological order, linked to the
 - [ ] https://www.reddit.com/r/hacking/comments/1wy610/exploit_tutorial_buffer_overflow/
 - [ ] [Metasploit documentation](https://www.metasploit.com/)
 - [ ] https://www.offensive-security.com/metasploit-unleashed/ Metasploit tut
-
+- [ ] checkout offensive security blog entries
 
 
 ## ideas
 - rust programming language .
    https://www.kaggle.com/
+   
+   
+
