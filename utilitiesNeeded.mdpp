@@ -21,3 +21,4 @@ other tools I am using in my day-2-day working life.
  * [ ] increase trackpoint pointers speed
  * [ ] history of dmenu commands
  * [ ] fix the ct script
+ * [ ] the uuu tool fails when there are paranthesis in the message to be added. fix that
