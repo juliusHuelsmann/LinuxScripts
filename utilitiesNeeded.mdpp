@@ -9,9 +9,8 @@ other tools I am using in my day-2-day working life.
       cmd 
   - done in this file and the file in reading list reading 
 * [ ] include markdown files from other sources
-  - using `pandoc *.md > result.md`: 
-    - `[title][refid]`
-    - `[title]: path/to/md/file (even website ok)`
+  - using `markdown-pp [list of input files] -o result.md`: 
+    - `!INCLUDE "filename"`
 
 
 #### Open 
