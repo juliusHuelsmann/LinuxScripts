@@ -32,6 +32,10 @@ other tools I am using in my day-2-day working life.
       popping up underneath the current vim md file
  * [ ] use aliases in dmenu
  * [ ] copy pasting into dmenu
+ * [ ] increase trackpoint pointers speed
+ * [ ] history of dmenu commands
+ * [ ] fix the ct script
+ * [ ] the uuu tool fails when there are paranthesis in the message to be added. fix that
 
 ### Reading list
 This list contains files / websites to be read in the future.
