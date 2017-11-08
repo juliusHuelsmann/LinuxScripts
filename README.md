@@ -36,6 +36,7 @@ other tools I am using in my day-2-day working life.
  * [ ] history of dmenu commands
  * [ ] fix the ct script
  * [ ] the uuu tool fails when there are paranthesis in the message to be added. fix that
+ * [ ] the git pre-push hook does not work each time but only sometimes. fix that
 
 ### Reading list
 This list contains files / websites to be read in the future.
