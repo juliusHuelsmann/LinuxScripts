@@ -6,11 +6,11 @@ other tools I am using in my day-2-day working life.
 
 #### Solved
  * [x] automate logging of feature requests or readings by execution of ctrld
-      cmd 
-  - done in this file and the file in reading list reading 
+       command 
+    - done in this file and the file in reading list reading 
  * [x] include markdown files from other sources
-  - using `markdown-pp [list of input files] -o result.md`: 
-    - `!INCLUDE "filename"`
+    - using `markdown-pp [list of input files] -o result.md`: 
+      - `!INCLUDE "filename"`
  * [x] fix the ct script
  * [x] the git pre-push hook does not work each time but only sometimes. fix that
 
