@@ -24,4 +24,4 @@ other tools I am using in my day-2-day working life.
  * [ ] history of dmenu commands
  * [ ] the uuu tool fails when there are paranthesis in the message to be added. fix that
  * [ ] daemonize is always one step behind. Compare replacement of ct alias by function not using daemonize function but alias.
- * [ ] [VIM] push vim
+ * [ ] [OS]
