@@ -1,5 +1,15 @@
 # Readings 
-This repository contains  notes on [papers](readings) and articles I recently read.
+Attention: if you are currently editing and viewing the `README.md` file, 
+remember that this file is read-only; only generated from `mdpp` files via
+the python-script `markdown-pp.py`. 
+
+**Do only edit the mdpp files in this directory.**
+
+## Content
+This repository contains notes on interesting [papers](readings/README.md),
+a list of utilites and features I am currently unhappy withj and a list of 
+papers / websites I want to read.
+
 
 
 ### Needed utilities
@@ -20,3 +30,6 @@ other tools I am using in my day-2-day working life.
 #### Open 
 * [ ] open multiple markdown preview windows in different qutebrowser windows
       popping up underneath the current vim md file
+
+### Reading list
+This list contains files / websites to be read in the future.
