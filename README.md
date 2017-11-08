@@ -26,6 +26,7 @@ other tools I am using in my day-2-day working life.
   - using `markdown-pp [list of input files] -o result.md`: 
     - `!INCLUDE "filename"`
  * [x] fix the ct script
+ * [x] the git pre-push hook does not work each time but only sometimes. fix that
 
 
 #### Open 
@@ -36,7 +37,6 @@ other tools I am using in my day-2-day working life.
  * [ ] increase trackpoint pointers speed
  * [ ] history of dmenu commands
  * [ ] the uuu tool fails when there are paranthesis in the message to be added. fix that
- * [ ] the git pre-push hook does not work each time but only sometimes. fix that
  * [ ] daemonize is always one step behind. Compare replacement of ct alias by function not using daemonize function but alias.
 
 ### Reading list
