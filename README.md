@@ -31,6 +31,7 @@ other tools I am using in my day-2-day working life.
  * [ ] open multiple markdown preview windows in different qutebrowser windows
       popping up underneath the current vim md file
  * [ ] use
+ * [ ] use aliases in dmenu
 
 ### Reading list
 This list contains files / websites to be read in the future.
