@@ -1,0 +1,16 @@
+# Readings 
+Attention: if you are currently editing and viewing the `README.md` file, 
+remember that this file is read-only; only generated from `mdpp` files via
+the python-script `markdown-pp.py`. 
+
+**Do only edit the mdpp files in this directory.**
+
+## Content
+This repository contains notes on interesting [papers](readings/README.md),
+a list of utilites and features I am currently unhappy withj and a list of 
+papers / websites I want to read.
+
+
+!INCLUDE "utilitiesNeeded.mdpp"
+
+!INCLUDE "readingQueue.mdpp"
