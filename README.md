@@ -4,7 +4,7 @@ remember that this file is read-only; only generated from `mdpp` files via
 the python-script `markdown-pp.py`. 
 
 >> ### Attention!
- >> **Do only edit the mdpp files in this directory!** 
+>> **Do only edit the mdpp files in this directory!** 
 
 ## Content
 This repository contains notes on interesting [papers](readings/README.md),
