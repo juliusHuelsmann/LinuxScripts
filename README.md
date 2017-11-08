@@ -33,3 +33,4 @@ other tools I am using in my day-2-day working life.
 
 ### Reading list
 This list contains files / websites to be read in the future.
+- [ ] https://codewords.recurse.com/issues/two/git-from-the-inside-out git from the inside out
