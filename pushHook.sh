@@ -1,6 +1,5 @@
 
 # fail if you fail 
-set -e
 
 # security commit
 echo -e        "auto-commit: security pre-remove commit (README.md)"
