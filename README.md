@@ -31,7 +31,9 @@ other tools I am using in my day-2-day working life.
  * [ ] open multiple markdown preview windows in different qutebrowser windows
       popping up underneath the current vim md file
  * [ ] use aliases in dmenu
+ * [ ] copy pasting into dmenu
 
 ### Reading list
 This list contains files / websites to be read in the future.
  * [ ] https://codewords.recurse.com/issues/two/git-from-the-inside-out git from the inside out
+ * [ ] https://rinuboney.github.io/2016/01/19/ladder-network.html
