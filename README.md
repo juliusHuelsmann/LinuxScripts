@@ -46,11 +46,19 @@ This list contains files / websites to be read in the future.
  * [ ] https://codewords.recurse.com/issues/two/git-from-the-inside-out git from the inside out
  * [ ] https://rinuboney.github.io/2016/01/19/ladder-network.html
  * [ ] preimage attack
+ * [ ] https://www.loganmarchione.com/2015/12/brief-introduction-gpg/
 
 
 ### Tasks
 #### a) Solved
  * [x] make tasks work
+ * [x] version control the rofi config
+ * [x] configure rofi to lokk nice
+ * [x] finish configuration qutebrowser
+ * [x] version control the new qutebrowser config
+ * [x] qutebrowser setup for new qv
+ * [x] improve dunst config
+ * [x] resize windows also with hjkl for i3
 
 #### b) Open 
  * [ ] have a look at interesting github repos by stars
@@ -67,12 +75,14 @@ This list contains files / websites to be read in the future.
  * [ ] shadow file content. user database
  * [ ] shadow contains pw and stuff from passwd
  * [ ] make concept of an enhanced workspace layout for i3 which is very configurable. TODO: find out how to be able to rearrange the workspaces in bar
- * [ ] fork dmenu and improve it by givig some options, e.g. expand it when it is necessary
- * [ ] configure rofi to lokk nice
- * [ ] version control the rofi config
  * [ ] register for aim3
  * [ ] register via qispos to aim 3
- * [ ] qutebrowser setup for new qv
+ * [ ] recab the metrics and dist def
+ * [ ] qr algorithm for suolution of ev ev prbl
+ * [ ] recap svd
+ * [ ] bei svd sollte die diemsnsionalitaet nekannt sein
+ * [ ] alex molla machine learning
+ * [ ] move with arrow keys in qutebrowser recommendations allow
 
 
 ### Notes
