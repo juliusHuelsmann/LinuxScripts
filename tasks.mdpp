@@ -4,6 +4,9 @@
  * [x] make tasks work
  * [x] version control the rofi config
  * [x] configure rofi to lokk nice
+ * [x] finish configuration qutebrowser
+ * [x] version control the new qutebrowser config
+ * [x] qutebrowser setup for new qv
 
 #### b) Open 
  * [ ] have a look at interesting github repos by stars
@@ -22,13 +25,11 @@
  * [ ] make concept of an enhanced workspace layout for i3 which is very configurable. TODO: find out how to be able to rearrange the workspaces in bar
  * [ ] register for aim3
  * [ ] register via qispos to aim 3
- * [ ] qutebrowser setup for new qv
  * [ ] recab the metrics and dist def
  * [ ] qr algorithm for suolution of ev ev prbl
  * [ ] recap svd
  * [ ] bei svd sollte die diemsnsionalitaet nekannt sein
  * [ ] alex molla machine learning
  * [ ] resize windows also with hjkl for i3
- * [ ] finish configuration qutebrowser
- * [ ] version control the new qutebrowser config
  * [ ] move with arrow keys in qutebrowser recommendations allow
+ * [ ] improve message daemon
