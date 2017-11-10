@@ -38,8 +38,16 @@ other tools I am using in my day-2-day working life.
  * [ ] history of dmenu commands
  * [ ] the uuu tool fails when there are paranthesis in the message to be added. fix that
  * [ ] daemonize is always one step behind. Compare replacement of ct alias by function not using daemonize function but alias.
+ * [ ] [VIM] find alternative for vim preview that is entirely open source, offers possibility to use multiple sessions
+ * [ ] [VIM] livedown alternative: open qutebrowser session in vertical split underneath the vim window, maintaining the previous split setting
 
 ### Reading list
 This list contains files / websites to be read in the future.
  * [ ] https://codewords.recurse.com/issues/two/git-from-the-inside-out git from the inside out
  * [ ] https://rinuboney.github.io/2016/01/19/ladder-network.html
+
+
+### Notes
+This section contains interesting notes or ways I solved some intermed. problem 
+that I need to take a look at proabably later in time
+ - change mouse speed via xinput --list-props --set-prop
