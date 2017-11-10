@@ -20,3 +20,4 @@
  * [ ] make concept of an enhanced workspace layout for i3 which is very configurable. TODO: find out how to be able to rearrange the workspaces in bar
  * [ ] fork dmenu and improve it by givig some options, e.g. expand it when it is necessary
  * [ ] configure rofi to lokk nice
+ * [ ] version control the rofi config
