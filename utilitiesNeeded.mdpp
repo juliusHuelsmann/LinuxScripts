@@ -13,6 +13,7 @@ other tools I am using in my day-2-day working life.
       - `!INCLUDE "filename"`
  * [x] fix the ct script
  * [x] the git pre-push hook does not work each time but only sometimes. fix that
+ * [x] increase trackpoint pointers speed
 
 
 #### Open 
@@ -20,7 +21,6 @@ other tools I am using in my day-2-day working life.
       popping up underneath the current vim md file
  * [ ] use aliases in dmenu
  * [ ] copy pasting into dmenu
- * [ ] increase trackpoint pointers speed
  * [ ] history of dmenu commands
  * [ ] the uuu tool fails when there are paranthesis in the message to be added. fix that
  * [ ] daemonize is always one step behind. Compare replacement of ct alias by function not using daemonize function but alias.
