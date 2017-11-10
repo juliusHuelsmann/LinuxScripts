@@ -7,6 +7,8 @@
  * [x] finish configuration qutebrowser
  * [x] version control the new qutebrowser config
  * [x] qutebrowser setup for new qv
+ * [x] improve dunst config
+ * [x] resize windows also with hjkl for i3
 
 #### b) Open 
  * [ ] have a look at interesting github repos by stars
@@ -30,6 +32,4 @@
  * [ ] recap svd
  * [ ] bei svd sollte die diemsnsionalitaet nekannt sein
  * [ ] alex molla machine learning
- * [ ] resize windows also with hjkl for i3
  * [ ] move with arrow keys in qutebrowser recommendations allow
- * [ ] improve message daemon
