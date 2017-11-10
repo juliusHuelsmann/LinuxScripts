@@ -66,6 +66,13 @@ This list contains files / websites to be read in the future.
  * [ ] keyring format list packing dump
  * [ ] shadow file content. user database
  * [ ] shadow contains pw and stuff from passwd
+ * [ ] make concept of an enhanced workspace layout for i3 which is very configurable. TODO: find out how to be able to rearrange the workspaces in bar
+ * [ ] fork dmenu and improve it by givig some options, e.g. expand it when it is necessary
+ * [ ] configure rofi to lokk nice
+ * [ ] version control the rofi config
+ * [ ] register for aim3
+ * [ ] register via qispos to aim 3
+ * [ ] qutebrowser setup for new qv
 
 
 ### Notes
