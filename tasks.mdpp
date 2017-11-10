@@ -1,0 +1,19 @@
+
+### Tasks
+#### a) Solved
+ * [x] make tasks work
+
+#### b) Open 
+ * [ ] have a look at interesting github repos by stars
+ * [ ] mail encryption
+ * [ ] rsa dsa
+ * [ ] man rsa
+ * [ ] got a clue on why some operations do not work. 
+       Need to be escaped somhow. the and sign is recognized as command too
+ * [ ] asn messy format. check up
+ * [ ] newline and formatting in messages i3
+ * [ ] nmap tends to fire up connection really quickly. rapsberry is not that fast, slow it down thus. 50 connections per second or less
+ * [ ] how to talk to the service use netcat for thas
+ * [ ] keyring format list packing dump
+ * [ ] shadow file content. user database
+ * [ ] shadow contains pw and stuff from passwd
