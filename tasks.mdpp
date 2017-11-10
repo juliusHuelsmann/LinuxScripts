@@ -17,3 +17,4 @@
  * [ ] keyring format list packing dump
  * [ ] shadow file content. user database
  * [ ] shadow contains pw and stuff from passwd
+ * [ ] make concept of an enhanced workspace layout for i3 which is very configurable. TODO: find out how to be able to rearrange the workspaces in bar
