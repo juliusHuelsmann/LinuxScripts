@@ -15,3 +15,5 @@ papers / websites I want to read.
 !INCLUDE "utilitiesNeeded.mdpp"
 
 !INCLUDE "readingQueue.mdpp"
+
+!INCLUDE "notes.mdpp"
