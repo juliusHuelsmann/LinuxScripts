@@ -9,6 +9,8 @@
  * [x] qutebrowser setup for new qv
  * [x] improve dunst config
  * [x] resize windows also with hjkl for i3
+ * [x] ViM aliases for comments, for loop, if, stuff
+ * [x] fix snipmate
 
 #### b) Open 
  * [ ] have a look at interesting github repos by stars
@@ -38,6 +40,5 @@
  * [ ] it seems like some applications fail to repaint. That succs. Some apps start with wrong glqq resolution grqq and some hang after a certain time. analyse the system error log
  * [ ] it seems like some applications fail to repaint. That succs. Some apps start with wrong glqq resolution grqq and some hang after a certain time. analyse the system error log
  * [ ] the sound recorder?! does not work. y?
- * [ ] ViM aliases for comments, for loop, if, stuff
- * [ ] fix snipmate
  * [ ] fix c ++ syntax highlighting
+ * [ ] fix the script i wrote for opening up the cpp file from h file
