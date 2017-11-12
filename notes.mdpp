@@ -4,3 +4,4 @@ This section contains interesting notes or ways I solved some intermed. problem
 that I need to take a look at proabably later in time
  - change mouse speed via xinput --list-props --set-prop
  - ps -ejh for process tree, -aux for all
+ - snipmate for touching new, filled file containing snippets, make :SnipMateOpen tab and edit and save
