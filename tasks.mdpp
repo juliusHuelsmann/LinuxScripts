@@ -46,3 +46,4 @@
  * [ ] make config repo public, check for copyright notices that are required
  * [ ] active window highlighting++
  * [ ] dirty bits
+ * [ ] vim colorscheme and config: disable the current line col highlighting in all window that is not active. disable 80char line too. set background black also in inactive windows.
