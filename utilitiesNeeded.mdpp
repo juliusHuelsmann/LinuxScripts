@@ -26,3 +26,4 @@ other tools I am using in my day-2-day working life.
  * [ ] daemonize is always one step behind. Compare replacement of ct alias by function not using daemonize function but alias.
  * [ ] [VIM] find alternative for vim preview that is entirely open source, offers possibility to use multiple sessions
  * [ ] [VIM] livedown alternative: open qutebrowser session in vertical split underneath the vim window, maintaining the previous split setting
+ * [ ] [OS] 1
