@@ -47,3 +47,4 @@
  * [ ] active window highlighting++
  * [ ] dirty bits
  * [ ] vim colorscheme and config: disable the current line col highlighting in all window that is not active. disable 80char line too. set background black also in inactive windows.
+ * [ ] https://stackoverflow.com/questions/27703139/disable-cursorcurrent-line-highlight-for-vim-tmux
