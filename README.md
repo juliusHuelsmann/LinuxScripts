@@ -40,6 +40,7 @@ other tools I am using in my day-2-day working life.
  * [ ] daemonize is always one step behind. Compare replacement of ct alias by function not using daemonize function but alias.
  * [ ] [VIM] find alternative for vim preview that is entirely open source, offers possibility to use multiple sessions
  * [ ] [VIM] livedown alternative: open qutebrowser session in vertical split underneath the vim window, maintaining the previous split setting
+ * [ ] [OS] 1
 
 ### Reading list
 This list contains files / websites to be read in the future.
@@ -59,6 +60,8 @@ This list contains files / websites to be read in the future.
  * [x] qutebrowser setup for new qv
  * [x] improve dunst config
  * [x] resize windows also with hjkl for i3
+ * [x] ViM aliases for comments, for loop, if, stuff
+ * [x] fix snipmate
 
 #### b) Open 
  * [ ] have a look at interesting github repos by stars
@@ -83,6 +86,21 @@ This list contains files / websites to be read in the future.
  * [ ] bei svd sollte die diemsnsionalitaet nekannt sein
  * [ ] alex molla machine learning
  * [ ] move with arrow keys in qutebrowser recommendations allow
+ * [ ] it seems like some applications fail to repaint. That succs. Some apps start with wrong glqq resolution grqq and some hang after a certain time. analyse the system error log
+ * [ ] test
+ * [ ] it seems like some applications fail to repaint. That succs. Some apps start with wrong glqq resolution grqq and some hang after a certain time. analyse the system error log
+ * [ ] it seems like some applications fail to repaint. That succs. Some apps start with wrong glqq resolution grqq and some hang after a certain time. analyse the system error log
+ * [ ] the sound recorder?! does not work. y?
+ * [ ] fix c ++ syntax highlighting
+ * [ ] fix the script i wrote for opening up the cpp file from h file
+ * [ ] ViM aliases for comments, for loop, if, stuff
+ * [ ] make config repo public, check for copyright notices that are required
+ * [ ] active window highlighting++
+ * [ ] dirty bits
+ * [ ] vim colorscheme and config: disable the current line col highlighting in all window that is not active. disable 80char line too. set background black also in inactive windows.
+ * [ ] https://stackoverflow.com/questions/27703139/disable-cursorcurrent-line-highlight-for-vim-tmux
+ * [ ] disable mouse movement enabling focus change on windows i3
+ * [ ] https://hadoop.apache.org/docs/r1.2.1/mapred_tutorial.html
 
 
 ### Notes
@@ -90,4 +108,5 @@ This section contains interesting notes or ways I solved some intermed. problem
 that I need to take a look at proabably later in time
  - change mouse speed via xinput --list-props --set-prop
  - ps -ejh for process tree, -aux for all
+ - snipmate for touching new, filled file containing snippets, make :SnipMateOpen tab and edit and save
 
