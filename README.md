@@ -101,6 +101,9 @@ This list contains files / websites to be read in the future.
  * [ ] https://stackoverflow.com/questions/27703139/disable-cursorcurrent-line-highlight-for-vim-tmux
  * [ ] disable mouse movement enabling focus change on windows i3
  * [ ] https://hadoop.apache.org/docs/r1.2.1/mapred_tutorial.html
+ * [ ] 120 euro überweisen!!
+ * [ ] ns3 dim inactive windows?
+ * [ ] frozentux iptables tut for netsec
 
 
 ### Notes
