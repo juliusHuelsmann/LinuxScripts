@@ -104,6 +104,11 @@ This list contains files / websites to be read in the future.
  * [ ] 120 euro überweisen!!
  * [ ] ns3 dim inactive windows?
  * [ ] frozentux iptables tut for netsec
+ * [ ] setup working env
+ * [ ] seclab finish task
+ * [ ] netsec read chap1
+ * [ ] aim finish tasks
+ * [ ] send offer 2db
 
 
 ### Notes
