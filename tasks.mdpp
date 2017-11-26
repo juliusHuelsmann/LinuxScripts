@@ -53,9 +53,11 @@
  * [ ] 120 euro überweisen!!
  * [ ] ns3 dim inactive windows?
  * [ ] frozentux iptables tut for netsec
- * [ ] setup working env
+ * [ ] 
  * [ ] seclab finish task
  * [ ] netsec read chap1
  * [ ] aim finish tasks
- * [ ] send offer 2db
+ * [x] send offer 2db
  * [ ] ticket
+ * [x] setup working env
+ * [ ] inotifysend merken
