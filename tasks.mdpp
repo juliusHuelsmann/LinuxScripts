@@ -66,3 +66,4 @@
  * [ ] try out testuser testpassword for ws on pi
  * [ ] bc tutorial pdf
  * [ ] devdes is not correctly logged!
+ * [ ] create systemd service for changing mod for brightness
