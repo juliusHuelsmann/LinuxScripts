@@ -41,6 +41,7 @@ other tools I am using in my day-2-day working life.
  * [ ] [VIM] find alternative for vim preview that is entirely open source, offers possibility to use multiple sessions
  * [ ] [VIM] livedown alternative: open qutebrowser session in vertical split underneath the vim window, maintaining the previous split setting
  * [ ] [OS] 1
+ * [ ] asdf
 
 ### Reading list
 This list contains files / websites to be read in the future.
@@ -48,6 +49,11 @@ This list contains files / websites to be read in the future.
  * [ ] https://rinuboney.github.io/2016/01/19/ladder-network.html
  * [ ] preimage attack
  * [ ] https://www.loganmarchione.com/2015/12/brief-introduction-gpg/
+ * [ ] read on model ensembles bagging and boosting
+ * [ ] read on model ensembles bagging and boosting
+ * [ ] papernot et al
+ * [ ] deep pwning
+ * [ ] https://dougblack.io/words/zsh-vi-mode.html
 
 
 ### Tasks
@@ -104,11 +110,20 @@ This list contains files / websites to be read in the future.
  * [ ] 120 euro überweisen!!
  * [ ] ns3 dim inactive windows?
  * [ ] frozentux iptables tut for netsec
- * [ ] setup working env
+ * [ ] 
  * [ ] seclab finish task
  * [ ] netsec read chap1
  * [ ] aim finish tasks
- * [ ] send offer 2db
+ * [x] send offer 2db
+ * [ ] ticket
+ * [x] setup working env
+ * [ ] inotifysend merken
+ * [ ] read on bayesian model averaging
+ * [ ] grep for cgi common gateway interface that is defined
+ * [ ] try out testuser testpassword for ws on pi
+ * [ ] bc tutorial pdf
+ * [ ] devdes is not correctly logged!
+ * [ ] create systemd service for changing mod for brightness
 
 
 ### Notes
