@@ -67,3 +67,4 @@
  * [ ] bc tutorial pdf
  * [ ] devdes is not correctly logged!
  * [ ] create systemd service for changing mod for brightness
+ * [ ] line ueberschreiben in vim an autocommand, nur fuer code, haengen
