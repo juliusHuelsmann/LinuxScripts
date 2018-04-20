@@ -69,3 +69,4 @@
  * [ ] create systemd service for changing mod for brightness
  * [ ] line ueberschreiben in vim an autocommand, nur fuer code, haengen
  * [ ] st
+ * [ ] dwm
