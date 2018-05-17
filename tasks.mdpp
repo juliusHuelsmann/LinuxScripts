@@ -11,80 +11,33 @@
  * [x] resize windows also with hjkl for i3
  * [x] ViM aliases for comments, for loop, if, stuff
  * [x] fix snipmate
+ * [x] register for aim3
+ * [x] fix the script i wrote for opening up the cpp file from h file
+ * [x] ViM aliases for comments, for loop, if, stuff
+ * [x] vim colorscheme and config: disable the current line col highlighting in all window that is not active. disable 80char line too. set background black also in inactive windows.
+ * [x] disable mouse movement enabling focus change on windows i3
+ * [x] ns3 dim inactive windows?
+ * [x] send offer 2db
+ * [x] ticket
+ * [x] setup working env
+ * [x] notifysend merken
 
 #### b) Open 
- * [ ] have a look at interesting github repos by stars
  * [ ] mail encryption
- * [ ] rsa dsa
  * [ ] man rsa
  * [ ] got a clue on why some operations do not work. 
        Need to be escaped somhow. the and sign is recognized as command too
- * [ ] asn messy format. check up
  * [ ] newline and formatting in messages i3
- * [ ] nmap tends to fire up connection really quickly. rapsberry is not that fast, slow it down thus. 50 connections per second or less
- * [ ] how to talk to the service use netcat for thas
  * [ ] keyring format list packing dump
- * [ ] shadow file content. user database
- * [ ] shadow contains pw and stuff from passwd
- * [ ] make concept of an enhanced workspace layout for i3 which is very configurable. TODO: find out how to be able to rearrange the workspaces in bar
- * [ ] register for aim3
- * [ ] register via qispos to aim 3
- * [ ] recab the metrics and dist def
- * [ ] qr algorithm for suolution of ev ev prbl
- * [ ] recap svd
- * [ ] bei svd sollte die diemsnsionalitaet nekannt sein
  * [ ] alex molla machine learning
- * [ ] move with arrow keys in qutebrowser recommendations allow
  * [ ] it seems like some applications fail to repaint. That succs. Some apps start with wrong glqq resolution grqq and some hang after a certain time. analyse the system error log
- * [ ] test
- * [ ] it seems like some applications fail to repaint. That succs. Some apps start with wrong glqq resolution grqq and some hang after a certain time. analyse the system error log
- * [ ] it seems like some applications fail to repaint. That succs. Some apps start with wrong glqq resolution grqq and some hang after a certain time. analyse the system error log
- * [ ] the sound recorder?! does not work. y?
- * [ ] fix c ++ syntax highlighting
- * [ ] fix the script i wrote for opening up the cpp file from h file
- * [ ] ViM aliases for comments, for loop, if, stuff
- * [ ] make config repo public, check for copyright notices that are required
- * [ ] active window highlighting++
  * [ ] dirty bits
- * [ ] vim colorscheme and config: disable the current line col highlighting in all window that is not active. disable 80char line too. set background black also in inactive windows.
  * [ ] https://stackoverflow.com/questions/27703139/disable-cursorcurrent-line-highlight-for-vim-tmux
- * [ ] disable mouse movement enabling focus change on windows i3
  * [ ] https://hadoop.apache.org/docs/r1.2.1/mapred_tutorial.html
- * [ ] 120 euro überweisen!!
- * [ ] ns3 dim inactive windows?
  * [ ] frozentux iptables tut for netsec
- * [ ] 
- * [ ] seclab finish task
- * [ ] netsec read chap1
- * [ ] aim finish tasks
- * [x] send offer 2db
- * [ ] ticket
- * [x] setup working env
- * [ ] inotifysend merken
- * [ ] read on bayesian model averaging
- * [ ] grep for cgi common gateway interface that is defined
- * [ ] try out testuser testpassword for ws on pi
- * [ ] bc tutorial pdf
- * [ ] devdes is not correctly logged!
- * [ ] create systemd service for changing mod for brightness
  * [ ] line ueberschreiben in vim an autocommand, nur fuer code, haengen
  * [ ] st
  * [ ] dwm
- * [ ] switch light and dark mode for in sun / evening
- * [ ] light mode incl terminal dmenu dunst vim
- * [ ] haftpflicht huk
+ * [ ] switch light and dark mode for in sun / evening; light mode incl terminal dmenu dunst vim
  * [ ] steuererklaerung
- * [ ] brief barmer
  * [ ] dhcp tunneling tcp
- * [ ] cbone
- * [ ] rust
- * [ ] yolo
- * [ ] go
- * [ ] https://link.springer.com/chapter/10.1007/978-3-540-45160-0_2
- * [ ] https://books.google.de/books?hl=de&lr=&id=UvA2MOJ7nBQC&oi=fnd&pg=PA15&dq=why+reputation+systems+are+flawed&ots=Pl6er33J-i&sig=tU01-vQ484lytxW9a0tHhk_2YDs#v=onepage&q=why%20reputation%20systems%20are%20flawed&f=false
- * [ ] https://dl.acm.org/citation.cfm?id=355122
- * [ ] webjsmin https://github.com/ethereum/web3.js/blob/1.0/dist/web3.min.js
- * [ ] https://www.datchley.name/es6-promises/
- * [ ] https://ethereum.stackexchange.com/questions/191/how-can-i-securely-generate-a-random-number-in-my-smart-contract
- * [ ] rust handbook, rust by example
- * [ ] proof of autohrity
