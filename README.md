@@ -112,6 +112,7 @@ This list contains files / websites to be read in the future.
  * [ ] switch light and dark mode for in sun / evening; light mode incl terminal dmenu dunst vim
  * [ ] steuererklaerung
  * [ ] dhcp tunneling tcp
+ * [ ] auto pull before issuing ttt
 
 
 ### Notes
