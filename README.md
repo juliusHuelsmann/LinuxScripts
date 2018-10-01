@@ -80,7 +80,91 @@ This list contains files / websites to be read in the future.
 
 
 ### First pass papers
-This file contains an overview of the papers I recently red (only superficially in one pass). Sorted by time of reading. (✓✓) only given if the observed parts of the paper are extremely well written.
+This file contains an overview of the papers I recently red (only superficially in one pass). Sorted by time of reading in reverse order. (✓✓) only given if the observed parts of the paper are extremely well written.
+
+#### DATE SUBJECT
+
+##### Notes
+
+##### Q
+
+
+
+#### `2018-10-01` SUBJECT
+
+##### Notes
+
+##### Q
+
+@inproceedings{bhattacharyya2018long,
+  title={Long-term on-board prediction of people in traffic scenes under uncertainty},
+  author={Bhattacharyya, Apratim and Fritz, Mario and Schiele, Bernt},
+  booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
+  pages={4194--4202},
+  year={2018}
+}
+
+
+#### `2018-10-01` SUBJECT (revisit)
+
+##### Notes
+
+##### Q
+
+```latex
+@article{yagi2017future,
+  title={Future Person Localization in First-Person Videos},
+  author={Yagi, Takuma and Mangalam, Karttikeya and Yonetani, Ryo and Sato, Yoichi},
+  journal={arXiv preprint arXiv:1711.11217},
+  year={2017}
+}
+```
+
+
+#### `2018-10-01` Siamese Networks
+##### Notes
+##### Q
+```latex
+@inproceedings{koch2015siamese,
+  title={Siamese neural networks for one-shot image recognition},
+  author={Koch, Gregory and Zemel, Richard and Salakhutdinov, Ruslan},
+  booktitle={ICML Deep Learning Workshop},
+  volume={2},
+  year={2015}
+}
+```
+
+#### `2018-10-01` Gaze Anticipation (revisit)
+##### Notes
+- point of gaze := point which human is fixating
+- method (called Deep Future Gaze := `DFG`): 
+  - GAN
+    - GENERATOR: 
+        1. (PREDICT FRAMES) Two-stream spatial temporal convolutional net 
+           (3d-CNN); one for background; one for foreground 
+        2. Second 3d-CNN employed for gaze anticipations on top 
+    - DISCRIMINATOR
+    - This GAN is used for predicting the future frames
+- [Experimental results and code](https://github.com/Mengmi/deepfuturegaze_gan    )
+
+##### Q
+- contribution 
+  1. Aforementioned method outperforms state-of-the-art methods
+    - prediction of the point of gaze in the future (order of a few seconds)
+  2. Introduces new egocentric dataset 
+- reproducibility: ✓✓
+- clarity: ✓
+- correctness: ✓ even though I am extremely surprised that the prediction of the future frames in the next few seconds can be done reliably (gaze anticipation is stacked on top of that)
+
+```latex
+@inproceedings{zhang2017deep,
+  title={Deep Future Gaze: Gaze Anticipation on Egocentric Videos Using Adversarial Networks.},
+  author={Zhang, Mengmi and Ma, Keng Teck and Lim, Joo-Hwee and Zhao, Qi and Feng, Jiashi},
+  booktitle={CVPR},
+  pages={3539--3548},
+  year={2017}
+}
+```
 
 #### `2018-10-01`  Video summarization (revisit)
 ##### Notes
@@ -116,37 +200,6 @@ This file contains an overview of the papers I recently red (only superficially 
 ```
 
 
-#### `2018-10-01` Gaze Anticipation (revisit)
-##### Notes
-- point of gaze := point which human is fixating
-- method (called Deep Future Gaze := `DFG`): 
-  - GAN
-    - GENERATOR: 
-        1. (PREDICT FRAMES) Two-stream spatial temporal convolutional net 
-           (3d-CNN); one for background; one for foreground 
-        2. Second 3d-CNN employed for gaze anticipations on top 
-    - DISCRIMINATOR
-    - This GAN is used for predicting the future frames
-- [Experimental results and code](https://github.com/Mengmi/deepfuturegaze_gan    )
-
-##### Q
-- contribution 
-  1. Aforementioned method outperforms state-of-the-art methods
-    - prediction of the point of gaze in the future (order of a few seconds)
-  2. Introduces new egocentric dataset 
-- reproducibility: ✓✓
-- clarity: ✓
-- correctness: ✓ even though I am extremely surprised that the prediction of the future frames in the next few seconds can be done reliably (gaze anticipation is stacked on top of that)
-
-```latex
-@inproceedings{zhang2017deep,
-  title={Deep Future Gaze: Gaze Anticipation on Egocentric Videos Using Adversarial Networks.},
-  author={Zhang, Mengmi and Ma, Keng Teck and Lim, Joo-Hwee and Zhao, Qi and Feng, Jiashi},
-  booktitle={CVPR},
-  pages={3539--3548},
-  year={2017}
-}
-```
 
 
 ### Tasks
