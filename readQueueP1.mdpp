@@ -1,0 +1,36 @@
+
+### First pass papers
+This file contains an overview of the papers I recently red (only superficially in one pass). Sorted by time of reading. (✓✓) only given if the observed parts of the paper are extremely well written.
+
+#### `2018-10-01`  Video summarization (revisit)
+##### Notes
+- video summarization := "compress" video by extracting important parts
+  - viewpoint := yields `important` aspects of the image / video
+  - applying the video summarization we receive similarity metrics wrt the
+    viewpoint.
+  - not one optimal viewpoint
+
+##### Q
+- contribution meta:
+  - viewpoint specified as `similarity` (in a semantic sense) which, once
+    again is depending on the aspect that is considered important.
+  - focuses on video-level similarities (supervized) 
+- core contribution:
+  1. Proposes a novel video summarization method from multiple groups; inspired
+     by Fisher's discriminant 
+  2. Introduces a dataset for that purpose
+  3. Developed optimization algorithm t
+- usefulness:
+  - can be used for feature extraction
+- clarity: ✓✓
+- correctness: ✓
+
+```bibtex
+@inproceedings{kanehira2018aware,
+  title={aware Video Summarization},
+  author={Kanehira, Atsushi and Van Gool, Luc and Ushiku, Yoshitaka and Harada, Tatsuya},
+  booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
+  pages={7435--7444},
+  year={2018}
+}
+```

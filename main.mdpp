@@ -16,7 +16,10 @@ papers / websites I want to read.
 
 !INCLUDE "readingQueue.mdpp"
 
+!INCLUDE "readQueueP1.mdpp"
+
 !INCLUDE "tasks.mdpp"
 
 !INCLUDE "notes.mdpp"
+
 

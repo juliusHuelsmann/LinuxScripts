@@ -1,4 +1,14 @@
 
+# 0.  UEFI support (done)
+Processor type and features  --->
+    [*] EFI runtime service support 
+    [*]   EFI stub support
+    [*]     EFI mixed-mode support
+ 
+Firmware Drivers  --->
+    EFI (Extensible Firmware Interface) Support  --->
+        <*> EFI Variable Support via sysfs
+
 # 1. Find modules for devices
 ## a) from a running, completely functional kernel
 Execute `detectModulesFromWorkingKernel.sh` (e.g. with root privileges for
@@ -214,9 +224,44 @@ Device Drivers
         [M] Sound Card Support
             [M] Advanced Linux Sound Architecture
                 PCI Devices
+
+
+
+
+
+If USB input devices (like keyboard or mouse) or other USB devices will be used, do not forget to enable those as well (CONFIG_HID_GENERIC and CONFIG_USB_HID, CONFIG_USB_SUPPORT, CONFIG_USB_XHCI_HCD, CONFIG_USB_EHCI_HCD, CONFIG_USB_OHCI_HCD):
+
+```
+KERNEL Activating USB support for input devices
+Device Drivers --->
+  HID support  --->
+    -*- HID bus support
+    <*>   Generic HID driver
+    [*]   Battery level reporting for HID devices
+      USB HID support  --->
+        <*> USB HID transport layer
+  [*] USB support  --->
+    <*>     xHCI HCD (USB 3.0) support   (containing generic xHCI driver for a
+                                          platform device)
+    <*>     EHCI HCD (USB 2.0) support
+    (<*>     OHCI HCD (USB 1.1) support)
+```
+
+
+
+
 ```
 
 [https://www.linuxtopia.org/online_books/linux_kernel/kernel_configuration/ch08.html](src)
+
+
+
+
+
+
+
+
+
 
 
 ## 3) CPU
@@ -240,11 +285,13 @@ Processor type and features
 XXX:
 ```
 2. Select processor type + features
+  - Next select the exact processor type. It is also recommended to enable MCE features (if available) so that users are able to be notified of any hardware problems
+  - printed to dmesg or `/dev/mcelog`
+  - XXX: install `app-admin/mcelog` package afterwards
 ```bash
 Processor type and features
     Processor family
-        ( ) 386
-        ( ) 486
+        (X) Generic-x86-64
 ```
 
 3. Enable multiprocessing:
@@ -460,12 +507,15 @@ select the general type:
 
 ```
 File systems
-    [*] Second extended fs support
-    [*] Ext4 journalling file system support
-    [ ] Reiserfs support
-    [ ] JFS filesystem support
-    [ ] XFS filesystem support
-#XXX: update
+    [ ] Second extended fs support
+    [ ] The ext3 filesystem
+    [x] The ext4 filesystem
+    [x] use ext4 for ext2
+    [x] ext4 security labels
+    [x] ext4 encryption
+    Pseudo Filesystem
+        [x] proc file system support (all descendents)
+        [x] tmpfs virtual memory filesystem support
 ```
 
 

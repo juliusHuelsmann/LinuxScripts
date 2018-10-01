@@ -1,8 +1,8 @@
 ac.ko.xz 
-ac97_bus.ko.xz 
-acpi-cpufreq.ko.xz 
-aes-x86_64.ko.xz 
-aesni-intel.ko.xz 
+ac97_bus.ko.xz    
+* [x] acpi-cpufreq.ko.xz 
+* [x] aes-x86_64.ko.xz 
+* [x] aesni-intel.ko.xz 
 agpgart.ko.xz 
 atkbd.ko.xz 
 battery.ko.xz 
