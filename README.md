@@ -77,6 +77,16 @@ This list contains files / websites to be read in the future.
  * [ ] http://akosiorek.github.io/ml/2018/04/03/norm_flows.html
  * [ ] http://akosiorek.github.io/ml/2018/03/14/what_is_wrong_with_vaes.html
  * [ ] http://akosiorek.github.io/ml/2018/03/14/what_is_wrong_with_vaes.html
+ * [ ] ```latex
+ @InProceedings{Taigman_2014_CVPR,
+   author = {Taigman, Yaniv and Yang, Ming and Ranzato, Marc'Aurelio and Wolf, Lior},
+   title = {DeepFace: Closing the Gap to Human-Level Performance in Face Verification},
+   booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+   month = {June},
+   year = {2014}
+ }
+```
+
 
 
 ### First pass papers
@@ -123,20 +133,6 @@ This file contains an overview of the papers I recently red (only superficially 
 }
 ```
 
-#### `2018-10-02` 
-
-##### Q
-
-
-```latex
-@InProceedings{Taigman_2014_CVPR,
-author = {Taigman, Yaniv and Yang, Ming and Ranzato, Marc'Aurelio and Wolf, Lior},
-title = {DeepFace: Closing the Gap to Human-Level Performance in Face Verification},
-booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
-month = {June},
-year = {2014}
-}
-```
 
 #### `2018-10-02` Siamese Networks (possibly revisit)
 
