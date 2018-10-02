@@ -155,6 +155,7 @@ year = {2014}
       distance in input space
     - mapping f := convolutional NN
 
+```latex
 @inproceedings{chopra2005learning,
   title={Learning a similarity metric discriminatively, with application to face verification},
   author={Chopra, Sumit and Hadsell, Raia and LeCun, Yann},
@@ -164,6 +165,7 @@ year = {2014}
   year={2005},
   organization={IEEE}
 }
+```
 
 
 #### `2018-10-01` Siamese Networks 
