@@ -2,6 +2,7 @@
 ### First pass papers
 This file contains an overview of the papers I recently red (only superficially in one pass). Sorted by time of reading in reverse order. (✓✓) only given if the observed parts of the paper are extremely well written.
 
+
 #### DATE SUBJECT
 
 ##### Notes
@@ -10,12 +11,13 @@ This file contains an overview of the papers I recently red (only superficially 
 
 
 
-#### `2018-10-01` SUBJECT
+#### `2018-10-02` SUBJECT
 
 ##### Notes
 
 ##### Q
 
+```latex
 @inproceedings{bhattacharyya2018long,
   title={Long-term on-board prediction of people in traffic scenes under uncertainty},
   author={Bhattacharyya, Apratim and Fritz, Mario and Schiele, Bernt},
@@ -23,9 +25,10 @@ This file contains an overview of the papers I recently red (only superficially 
   pages={4194--4202},
   year={2018}
 }
+```
 
 
-#### `2018-10-01` SUBJECT (revisit)
+#### `2018-10-02` SUBJECT (revisit)
 
 ##### Notes
 
@@ -40,10 +43,71 @@ This file contains an overview of the papers I recently red (only superficially 
 }
 ```
 
+#### `2018-10-02` 
 
-#### `2018-10-01` Siamese Networks
-##### Notes
 ##### Q
+
+
+```latex
+@InProceedings{Taigman_2014_CVPR,
+author = {Taigman, Yaniv and Yang, Ming and Ranzato, Marc'Aurelio and Wolf, Lior},
+title = {DeepFace: Closing the Gap to Human-Level Performance in Face Verification},
+booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+month = {June},
+year = {2014}
+}
+```
+
+#### `2018-10-02` Siamese Networks (possibly revisit)
+
+##### Q
+- category: proposes Siamese NN for facial verification
+- Siamese Networks
+  - use cases: 
+    - recognition + verification
+    - number training / class can be very low
+    - classes do not need to be known during training
+  - not useful alternatives
+    1. Distance based methods (compute similarity metric between pattern and lib of stored prototypes)
+    2. Generative models in reduced dimension space
+  - idea: 
+    - learn f : INPUT -> TARGET sth \| f(input) \|_1 maintains semantic 
+      distance in input space
+    - mapping f := convolutional NN
+
+@inproceedings{chopra2005learning,
+  title={Learning a similarity metric discriminatively, with application to face verification},
+  author={Chopra, Sumit and Hadsell, Raia and LeCun, Yann},
+  booktitle={Computer Vision and Pattern Recognition, 2005. CVPR 2005. IEEE Computer Society Conference on},
+  volume={1},
+  pages={539--546},
+  year={2005},
+  organization={IEEE}
+}
+
+
+#### `2018-10-01` Siamese Networks 
+##### Notes
+- `one shot learning` means to predict on the basis of only one single example of each new class
+  - normally; for one shot learning, domain specific features are designed
+    - works fine on similar inputs
+    - does however not offer robust solution
+- Siamese networks (see DeepFace paper)
+  - := NN-architecture that contains two or more identical subnetworks model architecture (involves distance-based loss)
+    - learns similarity of two pairs of inputs
+    - training thus involves pairwise learning -> quadratic pairs to learn
+  - advantages
+    - more robust to class imbalance
+    - good for one shot learning
+    - learn similarity
+  - Feature extraction
+  - employ unique structure to naturally rank similarity between inputs
+
+##### Q
+- contribution: 
+  1. Method for learning in `siamese neural networks`
+  
+  
 ```latex
 @inproceedings{koch2015siamese,
   title={Siamese neural networks for one-shot image recognition},
@@ -109,7 +173,7 @@ This file contains an overview of the papers I recently red (only superficially 
 - clarity: ✓✓
 - correctness: ✓
 
-```bibtex
+```latex
 @inproceedings{kanehira2018aware,
   title={aware Video Summarization},
   author={Kanehira, Atsushi and Van Gool, Luc and Ushiku, Yoshitaka and Harada, Tatsuya},
