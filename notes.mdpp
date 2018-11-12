@@ -9,3 +9,28 @@ that I need to take a look at proabably later in time
 - rvalue 
 - of course it is possible to return a lvalue from a function (but ugly).
 - lvalues remain lvalues even if they are const. const lvalues are not assignable. The lvalues that can be changed are called `modifiable lvalues`
+- language constructs operatinng on object values require rvalues as arguments.
+  - all lvalues that are not arrays / functions / incomplete types canbe converted to rvalues
+- basically * creates a lvalue from an rvalue 
+- & creates a rvalue from a lvalue
+  - otherwise defines reference types  (lvalue references)
+- NOTE: constant lvaue refernece can be assigned rvalues (as there is no fear that the rvalue will actually change)
+- CV-unqualified / CV-qualifier: const and volatile qualifier
+```c++
+int* p = &arr[0];
+*(p + 1) = 10;   // OK: p + 1 is an rvalue, but *(p + 1) is an lvalue
+```
+
+- 
+
+# Heap and free store
+In Herb's book "Exceptional C++", he defines:
+
+Heap: A dynamic memory area that is allocated/freed by the malloc/free functions.
+
+Free Store: A dynamic memory area that is allocated/freed by new/delete.
+
+Its possible for new and delete to be implemented in terms of malloc and free, so technically, they could be the same memory area. However, as the standard doesn't specify this, its best to treat them separatly, and not to mix malloc/delete or new/free.
+- http://zamanbakshifirst.blogspot.com/search/label/heap (bjarne stroustrup
+  - `I consistently use "free store" and "heap" is not a defined term in the C++ standard (outside the heap standard library algorithms, which are unrelated to new and malloc()). In relation to new, "heap" is simply a word someone uses (typically as a synonym to "free store") - usually because they come from a different language background`
+
