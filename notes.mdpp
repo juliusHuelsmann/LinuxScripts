@@ -34,3 +34,20 @@ Its possible for new and delete to be implemented in terms of malloc and free, s
 - http://zamanbakshifirst.blogspot.com/search/label/heap (bjarne stroustrup
   - `I consistently use "free store" and "heap" is not a defined term in the C++ standard (outside the heap standard library algorithms, which are unrelated to new and malloc()). In relation to new, "heap" is simply a word someone uses (typically as a synonym to "free store") - usually because they come from a different language background`
 
+
+
+# On default destructors / constructors
+## What is the difference between virtual ~Class() {} or virtual ~Class = #default
+
+### = default;
+- considered not user-defined 
+  - constructor: in case of value initialization for the constructor A* a = new A();
+    a special kind of initialization that does not use a constructor at all will take place.
+    `Zero-Initialization`.
+  - destrucuto: if a base / member with inaccessible / deleted destructor, it will only compile if
+    default destructor is selected and not if empty one is. However it will raise an exception
+    when the class actually is removed.
+
+
+
+
