@@ -56,6 +56,11 @@ editieren
 defaults, noatime,discard flags
 also flags igs rw,defaults,noatime,deiscard für arch partition
 
+- using the discard option for a moutn in /etc/fstab enables continuous trim in
+  device oeprations.
+-noatime : no access time storing in the journal.
+
+
 ```
 
 
