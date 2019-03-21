@@ -84,3 +84,9 @@
  * [ ] provide bigram / trigram support
  * [ ] question: is it possible to predict for the entire range of a time horizon or reuse the results of previous time horizons if not possible
  * [ ] include the notes from paperStudy into those in masterDefintiions
+ * [ ] https://www.youtube.com/watch?v=Vtw7U5oMsJk
+ * [ ] vim patch for relative line number and fold ? enabled. screen.c3872 get_cursor_rel
+ * [ ] lnum misc2
+ * [ ] second patch for displaying wc instead of words somehow.
+ * [ ] wrapping
+ * [ ] check topic logger for seg
