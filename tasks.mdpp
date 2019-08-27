@@ -90,7 +90,8 @@
  * [ ] second patch for displaying wc instead of words somehow.
  * [ ] wrapping
  * [ ] check topic logger for seg
- * [ ] floating point exception debugging
+ * [x] floating point exception debugging
  * [ ] extended target tracking using gaussian processes
  * [ ] export swu too early. to be done after compilation
  * [ ] build image later
+ * [ ] https://quantum2.xyz/2017/08/11/using-visual-c-compiler-linux/
