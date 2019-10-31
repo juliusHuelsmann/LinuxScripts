@@ -88,6 +88,13 @@ This list contains files / websites to be read in the future.
  }
 ```
 
+ * [ ] https://stackoverflow.com/questions/840321/how-can-i-see-the-assembly-code-for-a-c-program
+ * [ ] https://www.ibm.com/developerworks/rational/library/inline-assembly-c-cpp-guide/
+ * [ ] https://www.startpage.com/do/asearch?hmb=1&cat=web&cmd=process_search&language=english&engine0=v1all&query=c%2B%2B%20get%20next%20executed%20assembly%20instruction&abp=-1&t=black&nj=0&pg=0
+ * [ ] https://sourceware.org/gdb/wiki/Internals
+ * [ ] libgdb
+ * [ ] https://www.google.com/search?client=firefox-b-ab&ei=HnnpW5_NEozAgAaCvbPoBw&q=c%2B%2B+iterate+through+instructions+on+assembly+call+stack&oq=c%2B%2B+iterate+through+instructions+on+assembly+call+stack&gs_l=psy-ab.3...17416.21163.0.21330.0.0.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..0.0.0....0.NHjsL-Ay1Oc
+ * [ ] https://www.google.com/search?client=firefox-b-ab&ei=HnnpW5_NEozAgAaCvbPoBw&q=c%2B%2B+iterate+through+instructions+on+assembly+call+stack&oq=c%2B%2B+iterate+through+instructions+on+assembly+call+stack&gs_l=psy-ab.3...17416.21163.0.21330.0.0.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..0.0.0....0.NHjsL-Ay1Oc
 
 
 ### First pass papers
@@ -323,6 +330,52 @@ This file contains an overview of the papers I recently red (only superficially 
  * [ ] http://akosiorek.github.io/ml/2018/03/14/what_is_wrong_with_vaes.html
  * [ ] iconic
  * [ ] pomdp
+ * [ ] 45 to 60 seconds for each exercise
+ * [ ] promotion mittowch 3
+ * [ ] list all hints clion
+ * [ ] git://sourceware.org/git/binutils-gdb.git
+ * [ ] https://channel9.msdn.com/Events/GoingNative/2013/rand-Considered-Harmful
+ * [ ] rvalue refs
+ * [ ] https://wiki.archlinux.org/index.php/Mkinitcpio#Possibly_missing_firmware_for_module_XXXX
+ * [ ] https://www.amazon.com/TWONE-White-Cloud-Magnetic-Holder/dp/B016C1ULHM
+ * [ ] https://www.amazon.de/kwmobile-Magnet-Schl%C3%BCsselhalter-Organizer-Wolke/dp/B0759MW49S
+ * [ ] (Recommended) Nexus 5 and Nexus 5X: We offer official installation scripts for the Nexus 5 and Nexus 5X. The images are built on top of Halium and KDE Neon (16.04 in the latest stable rootfs, 18.04 in the latest edge rootfs). You can find more information here
+ * [ ] https://www.plasma-mobile.org/neon-arch-reference-rootfs/
+ * [ ] https://www.zurbrueggen.de/shop/zurbrueggen-badhocker-norway-weiss.html
+ * [ ] https://www.zurbrueggen.de/shop/wenko-turbo-loc-eckablage-turbo-loc.html
+ * [ ] https://www.zurbrueggen.de/shop/schlafen/nachtkommoden/z2-nachtkommode-luca.html
+ * [ ] https://stackoverflow.com/questions/388242/the-definitive-c-book-guide-and-list
+ * [ ] https://www.gamedev.net/blogs/entry/2249317-a-guide-to-getting-started-with-boostasio/
+ * [ ] fittnessstudio kündigen
+ * [ ] https://blog.aurynn.com/2015/12/16-contempt-culture
+ * [ ] disable second -- middle button -- clipboard
+ * [ ] steuererklaerung!
+ * [ ] https://www.ime.usp.br/~ddm/mac6916/mn.html
+ * [ ] metis
+ * [ ] master thesis recommendations coursea academic writing stanford and how to write an introduction stanford
+ * [ ] find out what synclient is for arch
+ * [ ] provide bigram / trigram support
+ * [ ] question: is it possible to predict for the entire range of a time horizon or reuse the results of previous time horizons if not possible
+ * [ ] include the notes from paperStudy into those in masterDefintiions
+ * [ ] https://www.youtube.com/watch?v=Vtw7U5oMsJk
+ * [ ] vim patch for relative line number and fold ? enabled. screen.c3872 get_cursor_rel
+ * [ ] lnum misc2
+ * [ ] second patch for displaying wc instead of words somehow.
+ * [ ] wrapping
+ * [ ] check topic logger for seg
+ * [x] floating point exception debugging
+ * [ ] extended target tracking using gaussian processes
+ * [ ] export swu too early. to be done after compilation
+ * [ ] build image later
+ * [ ] https://quantum2.xyz/2017/08/11/using-visual-c-compiler-linux/
+ * [ ] bbc single
+ * [ ] https://neomutt.org/guide/gettingstarted
+ * [ ] https://stackoverflow.com/questions/27687389/how-does-void-t-work
+ * [ ] https://stackoverflow.com/questions/610245/where-and-why-do-i-have-to-put-the-template-and-typename-keywords
+ * [ ] nmcli
+ * [ ] https://www.fluentcpp.com/2018/05/08/std-iterator-deprecated/
+ * [ ] dunst seems to hang
+ * [ ] open simple terminal at directory
 
 
 ### Notes
@@ -331,5 +384,51 @@ that I need to take a look at proabably later in time
  - change mouse speed via xinput --list-props --set-prop
  - ps -ejh for process tree, -aux for all
  - snipmate for touching new, filled file containing snippets, make :SnipMateOpen tab and edit and save
+- lvalue := locator value (represetns  an object that opccupies some identifiable location in memory)
+- rvalue 
+- of course it is possible to return a lvalue from a function (but ugly).
+- lvalues remain lvalues even if they are const. const lvalues are not assignable. The lvalues that can be changed are called `modifiable lvalues`
+- language constructs operatinng on object values require rvalues as arguments.
+  - all lvalues that are not arrays / functions / incomplete types canbe converted to rvalues
+- basically * creates a lvalue from an rvalue 
+- & creates a rvalue from a lvalue
+  - otherwise defines reference types  (lvalue references)
+- NOTE: constant lvaue refernece can be assigned rvalues (as there is no fear that the rvalue will actually change)
+- CV-unqualified / CV-qualifier: const and volatile qualifier
+```c++
+int* p = &arr[0];
+*(p + 1) = 10;   // OK: p + 1 is an rvalue, but *(p + 1) is an lvalue
+```
+
+- 
+
+# Heap and free store
+In Herb's book "Exceptional C++", he defines:
+
+Heap: A dynamic memory area that is allocated/freed by the malloc/free functions.
+
+Free Store: A dynamic memory area that is allocated/freed by new/delete.
+
+Its possible for new and delete to be implemented in terms of malloc and free, so technically, they could be the same memory area. However, as the standard doesn't specify this, its best to treat them separatly, and not to mix malloc/delete or new/free.
+- http://zamanbakshifirst.blogspot.com/search/label/heap (bjarne stroustrup
+  - `I consistently use "free store" and "heap" is not a defined term in the C++ standard (outside the heap standard library algorithms, which are unrelated to new and malloc()). In relation to new, "heap" is simply a word someone uses (typically as a synonym to "free store") - usually because they come from a different language background`
+
+
+
+# On default destructors / constructors
+## What is the difference between virtual ~Class() {} or virtual ~Class = #default
+
+### = default;
+- considered not user-defined 
+  - constructor: in case of value initialization for the constructor A* a = new A();
+    a special kind of initialization that does not use a constructor at all will take place.
+    `Zero-Initialization`.
+  - destrucuto: if a base / member with inaccessible / deleted destructor, it will only compile if
+    default destructor is selected and not if empty one is. However it will raise an exception
+    when the class actually is removed.
+
+
+
+
 
 
