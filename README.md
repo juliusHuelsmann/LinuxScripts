@@ -376,6 +376,7 @@ This file contains an overview of the papers I recently red (only superficially 
  * [ ] https://www.fluentcpp.com/2018/05/08/std-iterator-deprecated/
  * [ ] dunst seems to hang
  * [ ] open simple terminal at directory
+ * [ ] https://vt100.net/docs/vt100-ug/chapter3.html
 
 
 ### Notes
