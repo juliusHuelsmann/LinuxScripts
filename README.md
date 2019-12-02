@@ -377,6 +377,7 @@ This file contains an overview of the papers I recently red (only superficially 
  * [ ] dunst seems to hang
  * [ ] open simple terminal at directory
  * [ ] https://vt100.net/docs/vt100-ug/chapter3.html
+ * [ ] https://stackoverflow.com/questions/41538095/evaluate-multivariate-normal-gaussian-density-in-c
 
 
 ### Notes
