@@ -113,3 +113,4 @@
  * [ ] https://www.cnx-software.com/2017/09/12/how-to-remove-watermarks-timestamps-from-photos-with-gimp/
  * [ ] https://lichess.org/practice
  * [ ] https://cppinsights.io/
+ * [ ] code style: use noexcept whenever consteval is used
