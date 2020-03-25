@@ -114,3 +114,6 @@
  * [ ] https://lichess.org/practice
  * [ ] https://cppinsights.io/
  * [ ] code style: use noexcept whenever consteval is used
+ * [x] https://akrzemi1.wordpress.com/2020/01/29/requires-expression/
+ * [ ] http://b.atch.se/posts/constexpr-counter/
+ * [ ] http://b.atch.se/posts/non-constant-constant-expressions/
