@@ -397,6 +397,7 @@ This file contains an overview of the papers I recently red (only superficially 
  * [ ] https://msgpack.org/index.html
  * [ ] https://blog.tartanllama.xyz/spaceship-operator/
  * [ ] https://foonathan.net/2018/10/spaceship-proposals/
+ * [ ] https://archive.ics.uci.edu/ml/datasets/Daily+and+Sports+Activities
 
 
 ### Notes
