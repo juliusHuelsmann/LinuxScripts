@@ -398,6 +398,7 @@ This file contains an overview of the papers I recently red (only superficially 
  * [ ] https://blog.tartanllama.xyz/spaceship-operator/
  * [ ] https://foonathan.net/2018/10/spaceship-proposals/
  * [ ] https://archive.ics.uci.edu/ml/datasets/Daily+and+Sports+Activities
+ * [ ] https://regularize.wordpress.com/2017/02/13/sampling-from-unnormalized-distributions/
 
 
 ### Notes
