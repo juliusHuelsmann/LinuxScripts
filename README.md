@@ -99,6 +99,7 @@ This list contains files / websites to be read in the future.
  * [ ] https://github.com/DaemonSnake/unconstexpr
  * [ ] https://github.com/falemagn/fameta-counter
  * [ ] https://github.com/DaemonSnake/unconstexpr-cpp20
+ * [ ] https://regularize.wordpress.com/2017/02/13/sampling-from-unnormalized-distributions/
 
 
 ### First pass papers
